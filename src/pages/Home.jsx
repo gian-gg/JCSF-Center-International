@@ -1,12 +1,15 @@
-import Header from "../components/Header";
+import PageOne from "./PageOne";
 
 export default function App() {
+  const template = "p-2 px-4 sm:px-20 lg:32 w-screen";
   return (
-    <div className="bg-slate-400 p-2 px-4 sm:px-20 lg:32 w-screen h-screen">
-      <Header />
-      <div className="w-full mt-20 md:mt-40 text-white">
-        <div className="text-center flex flex-col gap-2"></div>
+    <div className="w-screen h-screen">
+      {/* page 1 */}
+      <div className={`bg-plum h-[90%] ${template}`}>
+        <PageOne />
       </div>
+      {/* page 2 */}
+      <div className={`bg-pink-50 h-screen ${template}`}></div>
     </div>
   );
 }

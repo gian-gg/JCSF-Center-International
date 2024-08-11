@@ -27,7 +27,7 @@ const Header = () => {
             </Link>
             <div className="flex flex-col justify-center font-dellaRespira text-center leading-none">
               <h1 className="text-2xl">JCSF CENTER</h1>
-              <h1 className="text-md">INTERNATIONAL</h1>
+              <h1 className="text-sm">INTERNATIONAL</h1>
             </div>
           </div>
           <NavBar className="hidden xl:flex gap-8 text-sm tracking-wider" />
@@ -46,7 +46,7 @@ const Header = () => {
 
       {/* Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-full bg-gray-800 transition-transform duration-300 transform ${
+        className={`fixed top-0 right-0 h-full bg-tyrianPurple transition-transform duration-300 transform ${
           showNavBar ? "translate-x-0" : "translate-x-full"
         } z-50`} // Ensures the menu is above other content
       >

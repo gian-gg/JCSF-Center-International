@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="w-screen h-screen">
       {/* page 1 */}
-      <div className={`bg-plum h-[90%] ${template}`}>
+      <div className={`bg-imageOne bg-cover h-[90%] ${template}`}>
         <PageOne />
       </div>
       {/* page 2 */}

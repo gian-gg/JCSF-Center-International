@@ -2,8 +2,6 @@ import Header from "../components/Header";
 
 import { Link } from "react-router-dom";
 
-// import kids from "../assets/images/kids2.png";
-
 const PageOne = () => {
   return (
     <div>
@@ -19,7 +17,7 @@ const PageOne = () => {
                 excepteur sunt ipsum."
               </h1>
               <p className="flex justify-end pr-12 lg:pr-32 font-robotoMono">
-                ~ laborum enim
+                ~ laborum enim'
               </p>
             </div>
           </div>
@@ -33,7 +31,7 @@ const PageOne = () => {
           </div>
         </div>
         {/* etc */}
-        <div className="etc">{/* <img src={kids} alt="" /> */}</div>
+        <div className="etc"></div>
       </div>
     </div>
   );

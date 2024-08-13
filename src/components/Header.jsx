@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import NavBar from "./NavBar";
-import NavButton from "./NavButton";
+import ContactButton from "./ContactButton";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
@@ -15,11 +15,7 @@ const Header = () => {
 
   return (
     <div className="relative font-robotoCondensed font-semibold text-white">
-      <header
-        className={`flex w-full justify-between items-center text-sm px-4 transition-transform duration-300 ${
-          showNavBar ? "-translate-x-2/3" : "translate-x-0"
-        }`}
-      >
+      <header className="flex w-full justify-between items-center text-sm px-4 transition-transform duration-300">
         <div className="flex items-center gap-10">
           <div className="flex gap-4">
             <Link to="/">
@@ -32,7 +28,7 @@ const Header = () => {
           </div>
           <NavBar className="hidden xl:flex gap-8 text-sm tracking-wider" />
         </div>
-        <NavButton className="hidden xl:flex" />
+        <ContactButton className="hidden xl:flex" />
 
         {!showNavBar && (
           <button
@@ -57,7 +53,7 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <NavButton className="flex" />
+            <ContactButton className="flex" />
 
             <NavBar className="w-full p-2 flex flex-col gap-4" />
           </div>

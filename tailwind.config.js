@@ -9,6 +9,7 @@ module.exports = {
         eksellDisplay: ["Eksell Display", "sans-serif"],
         colonna: ["Colonna MT", "sans-serif"],
         robotoMono: ["Roboto Mono", "monospace"],
+        robotoSlab: ["Roboto Slab", "serif"],
       },
       backgroundImage: {
         imageOne: "url('./src/assets/images/bg.jpg')",
@@ -17,7 +18,7 @@ module.exports = {
         plum: "#984C84",
         marianBlue: "#243E9B",
         xanthous: "#F5B305",
-        oxfordBlue: "##0B2341",
+        oxfordBlue: "#0B2341",
         tyrianPurple: "#4F003B",
       },
     },

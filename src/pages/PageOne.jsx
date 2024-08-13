@@ -2,6 +2,8 @@ import Header from "../components/Header";
 
 import { Link } from "react-router-dom";
 
+import kids from "../assets/images/kids2.png";
+
 const PageOne = () => {
   return (
     <div>
@@ -25,13 +27,15 @@ const PageOne = () => {
             <Link className="bg-tyrianPurple rounded-full py-2 px-4 hover:opacity-50">
               ABOUT US
             </Link>
-            <Link className="bg-xanthous rounded-full py-2 px-4 hover:opacity-50">
+            <Link className="bg-white text-black rounded-full py-2 px-4 hover:opacity-50">
               ADMISSION
             </Link>
           </div>
         </div>
         {/* etc */}
-        <div className="etc"></div>
+        <div className="etc">
+          <img src={kids} alt="" className="" />
+        </div>
       </div>
     </div>
   );

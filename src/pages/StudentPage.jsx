@@ -6,7 +6,7 @@ const StudentPage = () => {
       <img
         src={campusIMG}
         alt=""
-        className="mt-6 rounded-3xl block lg:absolute w-[90%] top-[2400px] items-center h-[720px] object-cover"
+        className="mt-6 rounded-3xl block lg:absolute w-[90%] top-[2400px] items-center h-auto"
       />
     </div>
   );

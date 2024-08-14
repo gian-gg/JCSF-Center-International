@@ -8,7 +8,7 @@ import ContactButton from "../components/ContactButton";
 
 const PageTwo = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="containers lg:absolute top-[600px] flex sm:flex-row flex-col gap-8 items-center mt-6 lg:mt-2">
         <TopLink className="bg-xanthous" />
         <TopLink className="bg-oxfordBlue" />

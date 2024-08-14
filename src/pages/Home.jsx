@@ -11,7 +11,7 @@ export default function App() {
         <LandingPage />
       </div>
       {/* page 2 */}
-      <div className={`bg-pink-50 min-h-[2000px] mb-6 ${template}`}>
+      <div className={`bg-pink-50 min-h-[2000px] ${template}`}>
         <About />
       </div>
       {/* page 3 */}

@@ -5,9 +5,6 @@
 @import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-solid-rounded/css/uicons-solid-rounded.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Della+Respira&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 @font-face {
   font-family: "Eksell Display";
@@ -17,4 +14,19 @@
 @font-face {
   font-family: "Colonna MT";
   src: url("../assets/fonts/colonna.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Intro Rust";
+  src: url("../assets/fonts/introrust.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Balgin";
+  src: url("../assets/fonts/balgin-extralight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Georgia Pro";
+  src: url("../assets/fonts/georgiapro-regular.ttf") format("truetype");
 }

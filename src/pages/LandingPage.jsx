@@ -6,7 +6,7 @@ import kids from "../assets/images/kids2.png";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="">
       <Header />
       <div className="flex flex-col lg:flex-row text-white mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}
@@ -18,12 +18,12 @@ const LandingPage = () => {
                 "Do minim do velit pariatur nulla excepteur reprehenderit esse
                 excepteur sunt ipsum."
               </h1>
-              <p className="flex justify-end pr-12 lg:pr-32 font-robotoMono">
+              <p className="flex justify-end pr-12 lg:pr-32 font-georgiaPro">
                 ~ laborum enim'
               </p>
             </div>
           </div>
-          <div className="hidden lg:flex px-14 gap-4 font-robotoCondensed text-lg">
+          <div className="hidden lg:flex px-14 gap-4 font-introRust text-lg">
             <Link className="bg-tyrianPurple rounded-full py-2 px-4 hover:opacity-50">
               ABOUT US
             </Link>
@@ -31,10 +31,6 @@ const LandingPage = () => {
               ADMISSION
             </Link>
           </div>
-        </div>
-        {/* etc */}
-        <div className="etc">
-          <img src={kids} alt="" className="" />
         </div>
       </div>
     </div>

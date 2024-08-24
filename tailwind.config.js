@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        robotoCondensed: ["Roboto Condensed", "sans-serif"],
-        dellaRespira: ["Della Respira", "serif"],
         eksellDisplay: ["Eksell Display", "sans-serif"],
         colonna: ["Colonna MT", "sans-serif"],
-        robotoMono: ["Roboto Mono", "monospace"],
-        robotoSlab: ["Roboto Slab", "serif"],
+        introRust: ["Intro Rust", "sans-serif"],
+        balgin: ["Balgin", "sans-serif"],
+        georgiaPro: ["Georgia Pro", "serif"],
+        dellaRespira: ["Della Respira", "serif"],
       },
       backgroundImage: {
         imageOne: "url('./src/assets/images/bg.jpg')",
@@ -20,6 +20,7 @@ module.exports = {
         xanthous: "#F5B305",
         oxfordBlue: "#0B2341",
         tyrianPurple: "#4F003B",
+        lavenderBlush: "#FDF2F8",
       },
     },
   },

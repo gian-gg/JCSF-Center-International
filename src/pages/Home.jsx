@@ -5,9 +5,9 @@ import StudentPage from "./StudentPage";
 export default function App() {
   const template = "p-2 px-4 sm:px-20 lg:32 w-screen";
   return (
-    <div className="w-screen h-screen">
+    <div className="">
       {/* page 1 */}
-      <div className={`bg-plum bg-cover min-h-[84%] ${template}`}>
+      <div className={`bg-plum bg-cover min-h-[700px] ${template}`}>
         <LandingPage />
       </div>
       {/* page 2 */}

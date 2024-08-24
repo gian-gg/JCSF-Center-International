@@ -13,10 +13,10 @@ const NavBar = ({ className }) => {
         <NavBarItem to="/" title="SERVICES" />
       </li>
       <li>
-        <NavBarItem to="/" title="ADMISSION" />
+        <NavBarItem to="/" title="STUDENT LIFE" />
       </li>
       <li>
-        <NavBarItem to="/" title="STUDENT LIFE" />
+        <NavBarItem to="/" title="ADMISSION" />
       </li>
     </ul>
   );

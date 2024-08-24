@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="relative font-robotoCondensed font-semibold text-white">
+    <div className="relative font-introRust font-semibold text-white">
       <header className="flex w-full justify-between items-center text-sm px-4 transition-transform duration-300">
         <div className="flex items-center gap-10">
           <div className="flex gap-4">
@@ -26,7 +26,7 @@ const Header = () => {
               <h1 className="text-sm">INTERNATIONAL</h1>
             </div>
           </div>
-          <NavBar className="hidden xl:flex gap-8 text-sm tracking-wider" />
+          <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />
         </div>
         <ContactButton className="hidden xl:flex" />
 

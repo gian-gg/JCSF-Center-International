@@ -13,7 +13,9 @@ const PhotoCard = ({ orientation, x, y, lgx, lgy, rotation, color }) => {
   }
   return (
     <div
-      className={`h-${height} w-${width} ${x} ${y} lg:h-${lgHeight} lg:w-${lgWidth} ${rotation} lg:${lgx} lg:${lgy} bg-lavenderBlush flex justify-center pt-3`}
+
+      className={`h-[200px] w-[200px] ${x} ${y} lg:h-${lgHeight} lg:w-${lgWidth} ${rotation} lg:${lgx} lg:${lgy} bg-lavenderBlush flex justify-center pt-3`}
+
     >
       <div className={`bg-${color} h-4/5 w-[95%]`}></div>
     </div>

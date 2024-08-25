@@ -58,7 +58,7 @@ const StudentPage = () => {
           lgx="-translate-x-20"
           lgy="-translate-y-80"
           rotation="-rotate-12"
-          color="pink-300"
+          color="pink-900"
         />
       </div>
     </div>

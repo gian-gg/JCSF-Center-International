@@ -6,8 +6,8 @@ import campus3 from "../assets/images/campus/campus3.jpg";
 import campus4 from "../assets/images/campus/campus4.jpg";
 import campus5 from "../assets/images/campus/campus5.jpg";
 
-const StudentCarousel = () => {
-  const carouselData = [
+const CampusImages = () => {
+  const campusData = [
     {
       src: campus1,
       alt: "image 1",
@@ -33,10 +33,10 @@ const StudentCarousel = () => {
   let [currentCampus, setCurrentCampus] = useState(0);
 
   return (
-    <div className="w-full h-full flex justify-center text-white text-4xl">
+    <div className="w-full h-full flex justify-center text-lavenderBlush text-4xl">
       <div
-        className="w-4/5 h-full lg:h-[700px] bg-cover bg-center rounded-2xl p-8 pt-[290px] flex justify-between"
-        style={{ backgroundImage: `url(${carouselData[currentCampus].src})` }}
+        className="w-4/5 h-full lg:h-[700px] bg-cover bg-center rounded-3xl p-8 pt-[320px] flex justify-between"
+        style={{ backgroundImage: `url(${campusData[currentCampus].src})` }}
       >
         <button
           className="bg-plum text-white border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
@@ -49,9 +49,9 @@ const StudentCarousel = () => {
           <i className="fi-sr-angle-small-left flex justify-center "></i>
         </button>
         <button
-          className="bg-plum text-white border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
+          className="bg-plum border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
           onClick={() => {
-            if (currentCampus < carouselData.length - 1) {
+            if (currentCampus < campusData.length - 1) {
               setCurrentCampus(currentCampus + 1);
             }
           }}
@@ -63,4 +63,4 @@ const StudentCarousel = () => {
   );
 };
 
-export default StudentCarousel;
+export default CampusImages;

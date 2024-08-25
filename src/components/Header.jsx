@@ -14,11 +14,7 @@ const Header = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="relative font-introRust font-semibold text-lavenderBlush">
-=======
-    <div className="relative font-introRust font-semibold text-white">
->>>>>>> origin/version-2
       <header className="flex w-full justify-between items-center text-sm px-4 transition-transform duration-300">
         <div className="flex items-center gap-10">
           <div className="flex gap-4">

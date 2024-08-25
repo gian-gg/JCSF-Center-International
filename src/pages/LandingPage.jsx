@@ -18,7 +18,11 @@ const LandingPage = () => {
                 "Do minim do velit pariatur nulla excepteur reprehenderit esse
                 excepteur sunt ipsum."
               </h1>
+<<<<<<< HEAD
               <p className="flex justify-end pr-12 lg:pr-32 font-georgiaPro opacity-80">
+=======
+              <p className="flex justify-end pr-12 lg:pr-32 font-georgiaPro">
+>>>>>>> origin/version-2
                 ~ laborum enim'
               </p>
             </div>

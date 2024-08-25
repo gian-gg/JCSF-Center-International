@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import CampusImages from "../components/CampusImages";
 import PhotoCard from "../components/PhotoCard";
+=======
+import StudentCarousel from "../components/StudentCarousel";
+>>>>>>> origin/version-2
 
 const StudentPage = () => {
   return (
     <div className="translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
+<<<<<<< HEAD
       <CampusImages />
       <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
         STUDENT LIFE
@@ -61,6 +66,15 @@ const StudentPage = () => {
           color="pink-300"
         />
       </div>
+=======
+      <StudentCarousel />
+      <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
+        STUDENT LIFE
+      </h1>
+      <p className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold">
+        Lorem ipsum dolor sit amet.
+      </p>
+>>>>>>> origin/version-2
     </div>
   );
 };

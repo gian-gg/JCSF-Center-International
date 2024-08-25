@@ -1,21 +1,13 @@
 const PhotoCard = ({ orientation, x, y, lgx, lgy, rotation, color }) => {
-  let height, width, lgHeight, lgWidth;
-  if (orientation == "landscape") {
-    height = "[200px]";
-    width = "[300px]";
-    lgHeight = "[350px]";
-    lgWidth = "[500px]";
-  } else {
-    height = "[300px]";
-    width = "[200px]";
-    lgHeight = "[500px]";
-    lgWidth = "[350px]";
-  }
+  // Define the size classes based on orientation
+  const sizeClasses =
+    orientation === "landscape"
+      ? "h-[200px] w-[300px] lg:h-[350px] lg:w-[500px]"
+      : "h-[300px] w-[200px] lg:h-[500px] lg:w-[350px]";
+
   return (
     <div
-
-      className={`h-[200px] w-[200px] ${x} ${y} lg:h-${lgHeight} lg:w-${lgWidth} ${rotation} lg:${lgx} lg:${lgy} bg-lavenderBlush flex justify-center pt-3`}
-
+      className={`${sizeClasses} ${x} ${y} ${rotation} lg:${lgx} lg:${lgy} bg-lavenderBlush flex justify-center pt-3`}
     >
       <div className={`bg-${color} h-4/5 w-[95%]`}></div>
     </div>

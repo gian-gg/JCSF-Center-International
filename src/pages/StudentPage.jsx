@@ -23,9 +23,8 @@ const StudentPage = () => {
             rotation="-rotate-12"
             color="xanthous"
           />
-          <PhotoCard orientation="landscape" color="pink-300" />
+          <PhotoCard orientation="landscape" color="oxfordBlue" />
           <PhotoCard
-            orientation="portrait"
             x="-translate-x-40"
             y="translate-y-40"
             lgx="-translate-x-16"
@@ -36,7 +35,6 @@ const StudentPage = () => {
         </div>
         <div className="flex mt-48 lg:mt-0">
           <PhotoCard
-            orientation="portrait"
             x="translate-x-12"
             y="-translate-y-40"
             lgx="-translate-x-20"
@@ -54,11 +52,11 @@ const StudentPage = () => {
         </div>
         <PhotoCard
           orientation="landscape"
-          y="-translate-y-40"
+          y="-translate-y-60"
           lgx="-translate-x-20"
           lgy="-translate-y-80"
           rotation="-rotate-12"
-          color="pink-300"
+          color="oxfordBlue"
         />
       </div>
     </div>

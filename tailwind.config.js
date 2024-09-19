@@ -1,6 +1,10 @@
+import fluid, { extract } from "fluid-tailwind";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: {
+    files: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    extract,
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -24,5 +28,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: ["fluid", "prettier-plugin-tailwindcss"],
 };

@@ -6,7 +6,7 @@ import kids from "../assets/images/kids2.png";
 
 const LandingPage = () => {
   return (
-    <div className="">
+    <div className="pt-4">
       <Header />
       <div className="flex flex-col lg:flex-row text-lavenderBlush mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}

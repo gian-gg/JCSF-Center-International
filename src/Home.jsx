@@ -4,9 +4,9 @@ import StudentPage from "./pages/StudentPage";
 import AdmissionPage from "./pages/AdmissionPage";
 
 export default function App() {
-  const template = "p-2 px-4 sm:px-20 lg:32 w-screen";
+  const template = "p-2 px-4 sm:px-20 lg:px-32 w-full";
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {/* page 1 */}
       <div className={`bg-plum bg-cover min-h-[700px] ${template}`}>
         <LandingPage />
@@ -16,7 +16,7 @@ export default function App() {
         <About />
       </div>
       {/* page 3 */}
-      <div className={`bg-oxfordBlue max-h-[2000px] ${template}`}>
+      <div className={`bg-oxfordBlue max-h-[2000px]  ${template}`}>
         <StudentPage />
       </div>
       {/* page 4 */}

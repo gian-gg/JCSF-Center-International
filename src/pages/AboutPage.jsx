@@ -1,17 +1,17 @@
 import logo from "../assets/images/logo.png";
 
-import ServiceLinks from "../components/ServicesLinks";
-import TopLink from "../components/TopLinks";
+import Card from "../components/Card";
+import ServiceCard from "../components/ServiceCard";
 
 import { Link } from "react-router-dom";
-import ContactButton from "../components/ContactButton";
+import Button from "../components/Button";
 
 const PageTwo = () => {
   return (
     <div className="mb-20 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
       <div className="mt-8 containers flex sm:flex-row flex-col gap-8 items-center">
-        <TopLink className="bg-xanthous" />
-        <TopLink className="bg-oxfordBlue" />
+        <Card height="96" width="64" color="xanthous" />
+        <Card height="96" width="64" color="oxfordBlue" />
       </div>
       <div className="mt-20 text-center font-introRust flex flex-col items-center">
         <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
@@ -37,11 +37,30 @@ const PageTwo = () => {
           </p>
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
-          <ServiceLinks />
-          <ServiceLinks />
-          <ServiceLinks />
+          <ServiceCard
+            color="gray-400"
+            label="LOREM, IPSUM DOLOR."
+            text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
+          />
+          <ServiceCard
+            color="gray-400"
+            label="LOREM, IPSUM DOLOR."
+            text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
+          />
+          <ServiceCard
+            color="gray-400"
+            label="LOREM, IPSUM DOLOR."
+            text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
+          />
         </div>
-        <ContactButton className="mt-64 flex font-bold font-robotoCondensed" />
+        <Button
+          element="link"
+          to="/"
+          color="xanthous"
+          label="Contact"
+          icon="sr-angle-small-right"
+          className="mt-64 flex font-bold font-robotoCondensed"
+        />
       </div>
     </div>
   );

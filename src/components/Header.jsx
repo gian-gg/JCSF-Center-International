@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
 import NavBar from "./NavBar";
-import ContactButton from "./ContactButton";
+import Button from "./Button";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
@@ -28,7 +28,14 @@ const Header = () => {
           </div>
           <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />
         </div>
-        <ContactButton className="hidden xl:flex" />
+        <Button
+          element="link"
+          to="/"
+          color="xanthous"
+          label="Contact"
+          icon="sr-angle-small-right"
+          className="hidden xl:flex"
+        />
 
         {!showNavBar && (
           <button
@@ -53,7 +60,14 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <ContactButton className="flex" />
+            <Button
+              element="link"
+              to="/"
+              color="xanthous"
+              label="Contact"
+              icon="sr-angle-small-right"
+              className="flex"
+            />
 
             <NavBar className="w-full p-2 flex flex-col gap-4" />
           </div>

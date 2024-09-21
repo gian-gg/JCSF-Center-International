@@ -9,14 +9,7 @@ const TopLink = ({ className, link }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
-      {/* <Link
-        href=""
-        className="bg-lavenderBlush border border-transparent rounded-full p-4 hover:brightness-125 transition-colors h-14 opacity-80"
-      >
-        <i className="fi-sr-angle-small-right"></i>
-      </Link> */}
-    </div>
+    ></div>
   );
 };
 

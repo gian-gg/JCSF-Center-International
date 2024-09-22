@@ -1,7 +1,7 @@
 import logo from "../assets/images/logo.png";
 
 import Card from "../components/Card";
-import ServiceCard from "../components/ServiceCard";
+import AboutCard from "../components/AboutCard";
 
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
@@ -37,17 +37,17 @@ const PageTwo = () => {
           </p>
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
-          <ServiceCard
+          <AboutCard
             color="gray-400"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
-          <ServiceCard
+          <AboutCard
             color="gray-400"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
-          <ServiceCard
+          <AboutCard
             color="gray-400"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."

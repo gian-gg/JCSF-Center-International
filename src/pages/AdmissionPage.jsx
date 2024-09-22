@@ -8,10 +8,10 @@ const AdmissionPage = () => {
       <div className="">
         <div className="flex">
           <div className="">
-            <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
+            <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust text-center lg:text-left">
               ADMISSION & ENROLLMENT
             </h1>
-            <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold">
+            <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold text-center lg:text-left">
               JOIN US NOW <span className="font-colonna">!</span>
             </h2>
           </div>
@@ -42,7 +42,7 @@ const AdmissionPage = () => {
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
         </div>
-        <div className="mt-12 flex justify-center gap-8">
+        <div className="mt-12 flex flex-col md:flex-row justify-center gap-8 items-center">
           <Button element="button" color="plum" label="Button 1" />
           <Button element="button" color="xanthous" label="Button 2" />
           <Button element="button" color="oxfordBlue" label="Button 3" />

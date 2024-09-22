@@ -1,4 +1,4 @@
-const ServiceLinks = ({ url, color, className, label, text }) => {
+const AboutCard = ({ url, color, className, label, text }) => {
   return (
     <div>
       <div className="h-96 w-80">
@@ -14,4 +14,4 @@ const ServiceLinks = ({ url, color, className, label, text }) => {
   );
 };
 
-export default ServiceLinks;
+export default AboutCard;

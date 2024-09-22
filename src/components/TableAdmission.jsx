@@ -1,17 +1,17 @@
 const TableAdmission = ({ num, step, text }) => {
   return (
-    <div>
-      <table className="w-full table-auto border-separate border-spacing-4">
+    <div className="w-full">
+      <table className=" table-auto border-separate border-spacing-4">
         <tbody>
           <tr className="text-center">
-            <td className="font-bold text-3xl lg:text-6xl text-plum px-4 py-2 align-top font-mono">
+            <td className="font-bold text-3xl lg:text-6xl text-plum px-4 py-2 align-top font-robotoMono">
               {num}
             </td>
-            <td className="font-semibold text-xl lg:text-2xl px-4 py-2 text-gray-700 align-top font-introRust">
+            <td className="font-semibold text-xl lg:text-2xl px-4 py-2 text-gray-700 align-top font-introRust text-left">
               {step}
-            </td>
-            <td className="text-lg md:text-base text-gray-600 px-4 py-2 leading-relaxed text-left align-top font-georgiaPro">
-              {text}
+              <p className="text-lg md:text-base text-gray-600 px-4 py-2 leading-relaxed align-top font-georgiaPro text-justify">
+                - {text}
+              </p>
             </td>
           </tr>
         </tbody>

@@ -14,6 +14,7 @@ module.exports = {
         balgin: ["Balgin", "sans-serif"],
         georgiaPro: ["Georgia Pro", "serif"],
         dellaRespira: ["Della Respira", "serif"],
+        robotoMono: ["Roboto Mono", "monospace"],
       },
       backgroundImage: {
         imageOne: "url('./src/assets/images/bg.jpg')",

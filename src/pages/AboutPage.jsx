@@ -10,8 +10,8 @@ const PageTwo = () => {
   return (
     <div className="mb-20 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
       <div className="mt-8 containers flex sm:flex-row flex-col gap-8 items-center">
-        <Card height="96" width="64" color="xanthous" />
-        <Card height="96" width="64" color="oxfordBlue" />
+        <Card color="xanthous" />
+        <Card color="oxfordBlue" />
       </div>
       <div className="mt-20 text-center font-introRust flex flex-col items-center">
         <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
@@ -38,17 +38,17 @@ const PageTwo = () => {
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
           <AboutCard
-            color="gray-400"
+            color="xanthous"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
-            color="gray-400"
+            color="xanthous"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
-            color="gray-400"
+            color="xanthous"
             label="LOREM, IPSUM DOLOR."
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />

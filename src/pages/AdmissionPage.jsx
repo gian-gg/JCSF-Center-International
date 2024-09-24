@@ -4,22 +4,28 @@ import Card from "../components/Card";
 
 const AdmissionPage = () => {
   return (
-    <div className="flex">
-      <div className="">
-        <div className="flex">
-          <div className="">
-            <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust text-center lg:text-left">
-              ADMISSION & ENROLLMENT
-            </h1>
-            <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold text-center lg:text-left">
+    <div className="">
+      {/* Main Content */}
+      <div className="flex-1">
+        {/* Title and Subtitle */}
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="text-center lg:text-left">
+            <div className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
+              <p>ADMISSION</p>
+              <p>ENROLLMENT</p>
+            </div>
+            <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold">
               JOIN US NOW <span className="font-colonna">!</span>
             </h2>
           </div>
-          <div className="flex gap-8 justify-around items-center">
-            <Card height="48" width="48" color="plum" />
-            <Card height="48" width="48" color="xanthous" />
+          {/* Cards Section */}
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center lg:translate-y-[-80px] mt-12 md:mt-0">
+            <Card color="plum" />
+            <Card color="xanthous" />
           </div>
         </div>
+
+        {/* Table Section */}
         <div className="mt-12">
           <TableAdmission
             num="01"
@@ -42,6 +48,8 @@ const AdmissionPage = () => {
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
         </div>
+
+        {/* Buttons Section */}
         <div className="mt-12 flex flex-col md:flex-row justify-center gap-8 items-center">
           <Button element="button" color="plum" label="Button 1" />
           <Button element="button" color="xanthous" label="Button 2" />

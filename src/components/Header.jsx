@@ -1,23 +1,32 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 
+import { Link } from "react-router-dom";
+import useDetectScroll from "@smakss/react-scroll-direction";
+
 import NavBar from "./NavBar";
 import Button from "./Button";
 
-import { RiMenu4Fill } from "react-icons/ri";
+import { LuMenu } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
 
 const Header = () => {
   const [showNavBar, setShowNavBar] = useState(false);
 
-  const toggleNavBar = () => {
-    setShowNavBar(!showNavBar);
-    console.log(showNavBar);
-  };
+  const toggleNavBar = () => setShowNavBar(!showNavBar);
+
+  const scrollDirection = useDetectScroll();
+  let scrollDirect = scrollDirection.scrollDir;
+
+  useEffect(() => {
+    if (showNavBar) {
+      toggleNavBar();
+    }
+  }, [scrollDirect]);
 
   return (
     <div className="relative font-introRust font-semibold text-lavenderBlush">
-      <header className="flex w-full justify-between items-center text-sm px-4 transition-transform duration-300">
+      <header className="flex w-full justify-between items-center text-sm px-4 duration-300">
         <div className="flex items-center gap-10">
           <Logo />
           <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />
@@ -36,14 +45,14 @@ const Header = () => {
             className="block xl:hidden hover:opacity-50 text-4xl"
             onClick={toggleNavBar}
           >
-            <RiMenu4Fill />
+            <LuMenu />
           </button>
         )}
       </header>
 
       {/* Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-full bg-tyrianPurple transition-transform duration-300 transform ${
+        className={`fixed top-0 right-0 h-full bg-tyrianPurple duration-300  ${
           showNavBar ? "translate-x-0" : "translate-x-full"
         } z-50`} // Ensures the menu is above other content
       >
@@ -66,8 +75,24 @@ const Header = () => {
               className="flex"
             />
 
-            <NavBar className="w-full p-2 flex flex-col gap-4" />
+            <NavBar
+              className="w-full p-2 flex flex-col gap-4"
+              isBordered="True"
+            />
           </div>
+        </div>
+        <div className="font-robotoMono text-sm px-8 opacity-80">
+          <p>© 2024, JCSF</p>
+          <p>
+            Designed by:{" "}
+            <Link
+              to="https://github.com/gian-gg"
+              target="_blank"
+              className="underline"
+            >
+              gian.gg
+            </Link>
+          </p>
         </div>
       </div>
 

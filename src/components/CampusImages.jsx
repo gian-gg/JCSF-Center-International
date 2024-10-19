@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
+
 import campus1 from "../assets/images/campus/campus1.jpg";
 import campus2 from "../assets/images/campus/campus2.jpg";
 import campus3 from "../assets/images/campus/campus3.jpg";
@@ -46,7 +48,7 @@ const CampusImages = () => {
             }
           }}
         >
-          <i className="fi-sr-angle-small-left flex justify-center "></i>
+          <FaChevronLeft />
         </button>
         <button
           className="bg-plum border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
@@ -56,7 +58,7 @@ const CampusImages = () => {
             }
           }}
         >
-          <i className="fi-sr-angle-small-right flex justify-center "></i>
+          <FaChevronRight />
         </button>
       </div>
     </div>

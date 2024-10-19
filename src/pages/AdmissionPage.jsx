@@ -2,26 +2,33 @@ import TableAdmission from "../components/TableAdmission";
 import Button from "../components/Button";
 import Card from "../components/Card";
 
+import aboutCard1 from "../assets/images/about/about1.png";
+import aboutCard2 from "../assets/images/about/about2.png";
+
 const AdmissionPage = () => {
   return (
-    <div className="">
+    <div className="mb-12">
       {/* Main Content */}
       <div className="flex-1">
         {/* Title and Subtitle */}
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="text-center lg:text-left">
-            <div className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
+        <div className="flex flex-col admissionLG:flex-row gap-4">
+          <div className="text-center admissionLG:text-left">
+            <div className="mt-20 text-5xl sm:text-7xl admissionLG:text-8xl font-extrabold font-introRust">
               <p>ADMISSION</p>
               <p>ENROLLMENT</p>
             </div>
-            <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold">
+            <h2 className="text-lg sm:text-2xl admissionLG:text-3xl opacity-80 font-balgin font-bold">
               JOIN US NOW <span className="font-colonna">!</span>
             </h2>
           </div>
           {/* Cards Section */}
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-center lg:translate-y-[-80px] mt-12 md:mt-0">
-            <Card color="plum" />
-            <Card color="xanthous" />
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-center admissionLG:translate-y-[-80px] mt-12 md:mt-0">
+            <Card color="plum" backgroundImage={aboutCard1} title="TITLE 1" />
+            <Card
+              color="xanthous"
+              backgroundImage={aboutCard2}
+              title="TITLE 2"
+            />
           </div>
         </div>
 
@@ -34,17 +41,17 @@ const AdmissionPage = () => {
           />
           <TableAdmission
             num="02"
-            step="STEPSTEP"
+            step="STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
           <TableAdmission
             num="03"
-            step="STEPSTEPSTEP"
+            step="STEP STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
           <TableAdmission
             num="04"
-            step="STEPSTEPSTEPSTEP"
+            step="STEP STEP STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
         </div>

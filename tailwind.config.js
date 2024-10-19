@@ -1,4 +1,5 @@
 import fluid, { extract } from "fluid-tailwind";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: {
@@ -7,6 +8,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        admissionLG: "1350px",
+      },
       fontFamily: {
         eksellDisplay: ["Eksell Display", "sans-serif"],
         colonna: ["Colonna MT", "sans-serif"],

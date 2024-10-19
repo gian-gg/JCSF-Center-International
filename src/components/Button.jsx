@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ element, to, className, color, label, icon }) => {
+import { FaAngleRight } from "react-icons/fa6";
+
+const Button = ({ element, to, className, color, label, arrow }) => {
   const Component = element === "button" ? "button" : Link;
 
   return (
@@ -10,7 +12,7 @@ const Button = ({ element, to, className, color, label, icon }) => {
     >
       <div className="flex items-center justify-center align-middle">
         <p>{label}</p>
-        <i className={`fi-${icon} flex justify-center `}></i>
+        {arrow === "True" && <FaAngleRight />}
       </div>
     </Component>
   );

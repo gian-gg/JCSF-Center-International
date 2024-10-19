@@ -6,12 +6,19 @@ import AboutCard from "../components/AboutCard";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
+import aboutCard1 from "../assets/images/about/about1.png";
+import aboutCard2 from "../assets/images/about/about2.png";
+
+import aboutCard3 from "../assets/images/about/aboutCard1.jpg";
+import aboutCard4 from "../assets/images/about/aboutCard2.jpg";
+import aboutCard5 from "../assets/images/about/aboutCard3.jpg";
+
 const PageTwo = () => {
   return (
     <div className="mb-20 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
       <div className="mt-8 containers flex sm:flex-row flex-col gap-8 items-center">
-        <Card color="xanthous" />
-        <Card color="oxfordBlue" />
+        <Card color="xanthous" backgroundImage={aboutCard1} title="TITLE 1" />
+        <Card color="oxfordBlue" backgroundImage={aboutCard2} title="TITLE 2" />
       </div>
       <div className="mt-20 text-center font-introRust flex flex-col items-center">
         <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
@@ -30,26 +37,26 @@ const PageTwo = () => {
             do incididunt aliqua eu officia ut laborum ad enim. Velit eiusmod
             nisi esse exercitation adipisicing enim in eu. Minim deserunt Lorem
             fugiat et consectetur commodo magna dolor incididunt elit dolor
-            consectetur adipisicing.{" "}
-            <Link to="/" className="underline text-plum">
-              Read more
-            </Link>
+            consectetur adipisicing.
           </p>
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
           <AboutCard
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
+            backgroundImage={aboutCard3}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
+            backgroundImage={aboutCard4}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
+            backgroundImage={aboutCard5}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
         </div>
@@ -58,7 +65,7 @@ const PageTwo = () => {
           to="/"
           color="xanthous"
           label="Contact"
-          icon="sr-angle-small-right"
+          arrow="True"
           className="mt-64 flex font-bold font-robotoCondensed"
         />
       </div>

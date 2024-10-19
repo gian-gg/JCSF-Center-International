@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import Logo from "./Logo";
 
 import NavBar from "./NavBar";
 import Button from "./Button";
-import logo from "../assets/images/logo.png";
+
+import { RiMenu4Fill } from "react-icons/ri";
+import { MdOutlineClose } from "react-icons/md";
 
 const Header = () => {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -17,15 +19,7 @@ const Header = () => {
     <div className="relative font-introRust font-semibold text-lavenderBlush">
       <header className="flex w-full justify-between items-center text-sm px-4 transition-transform duration-300">
         <div className="flex items-center gap-10">
-          <div className="flex gap-4">
-            <Link to="/">
-              <img className="w-16 h-16" src={logo} alt="logo" />
-            </Link>
-            <div className="flex flex-col justify-center font-dellaRespira text-center leading-none">
-              <h1 className="text-2xl">JCSF CENTER</h1>
-              <h1 className="text-sm">INTERNATIONAL</h1>
-            </div>
-          </div>
+          <Logo />
           <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />
         </div>
         <Button
@@ -33,16 +27,16 @@ const Header = () => {
           to="/"
           color="xanthous"
           label="Contact"
-          icon="sr-angle-small-right"
+          arrow="True"
           className="hidden xl:flex"
         />
 
         {!showNavBar && (
           <button
-            className="block xl:hidden hover:opacity-50"
+            className="block xl:hidden hover:opacity-50 text-4xl"
             onClick={toggleNavBar}
           >
-            <i className="fi-sr-bars-staggered text-2xl"></i>
+            <RiMenu4Fill />
           </button>
         )}
       </header>
@@ -55,8 +49,11 @@ const Header = () => {
       >
         <div className="p-4">
           <div className="flex justify-end">
-            <button className="m-2 hover:opacity-50" onClick={toggleNavBar}>
-              <i className="fi-sr-cross-small text-2xl"></i>
+            <button
+              className="m-2 hover:opacity-50 text-4xl"
+              onClick={toggleNavBar}
+            >
+              <MdOutlineClose />
             </button>
           </div>
           <div className="flex flex-col items-center gap-4">
@@ -65,7 +62,7 @@ const Header = () => {
               to="/"
               color="xanthous"
               label="Contact"
-              icon="sr-angle-small-right"
+              arrow="True"
               className="flex"
             />
 

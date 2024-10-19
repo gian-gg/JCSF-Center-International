@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <div className="pt-4">
+    <div className="pt-8">
       <div className="flex flex-col lg:flex-row text-lavenderBlush mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}
         <div className="flex flex-col max-w-[680px]">

@@ -11,9 +11,6 @@ const NavBar = ({ className, isBordered }) => {
           <NavBarItem to="about" title="ABOUT JCSF" isBordered={isBordered} />
         </li>
         <li>
-          <NavBarItem to="/" title="SERVICES" isBordered={isBordered} />
-        </li>
-        <li>
           <NavBarItem
             to="student"
             title="STUDENT LIFE"

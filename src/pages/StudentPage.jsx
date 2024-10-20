@@ -1,6 +1,13 @@
 import CampusImages from "../components/CampusImages";
 import PhotoCard from "../components/PhotoCard";
 
+import image1 from "../assets/images/students/image1.jpg";
+import image2 from "../assets/images/students/image2.jpg";
+import image3 from "../assets/images/students/image3.jpg";
+import image4 from "../assets/images/students/image4.jpg";
+import image5 from "../assets/images/students/image5.jpg";
+import image6 from "../assets/images/students/image6.jpg";
+
 const StudentPage = () => {
   return (
     <div className="translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
@@ -22,8 +29,13 @@ const StudentPage = () => {
             lgy="translate-x-16"
             rotation="-rotate-12"
             color="xanthous"
+            backgroundImage={image1}
           />
-          <PhotoCard orientation="landscape" color="oxfordBlue" />
+          <PhotoCard
+            orientation="landscape"
+            color="oxfordBlue"
+            backgroundImage={image2}
+          />
           <PhotoCard
             x="-translate-x-40"
             y="translate-y-40"
@@ -31,6 +43,7 @@ const StudentPage = () => {
             lgy="translate-y-20"
             rotation="rotate-[20deg]"
             color="plum"
+            backgroundImage={image3}
           />
         </div>
         <div className="flex mt-48 lg:mt-0">
@@ -41,6 +54,7 @@ const StudentPage = () => {
             lgy="-translate-y-20"
             rotation="-rotate-2"
             color="plum"
+            backgroundImage={image4}
           />
           <PhotoCard
             orientation="landscape"
@@ -48,6 +62,7 @@ const StudentPage = () => {
             lgy="-translate-y-20"
             rotation="rotate-2"
             color="xanthous"
+            backgroundImage={image5}
           />
         </div>
         <PhotoCard
@@ -57,6 +72,7 @@ const StudentPage = () => {
           lgy="-translate-y-80"
           rotation="-rotate-12"
           color="oxfordBlue"
+          backgroundImage={image6}
         />
       </div>
     </div>

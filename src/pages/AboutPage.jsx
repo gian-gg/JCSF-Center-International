@@ -15,7 +15,7 @@ import aboutCard5 from "../assets/images/about/aboutCard3.jpg";
 
 const PageTwo = () => {
   return (
-    <div className="mb-20 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
+    <div className="mb-2 lg:mb-52 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
       <div className="mt-8 containers flex sm:flex-row flex-col gap-8 items-center">
         <Card color="xanthous" backgroundImage={aboutCard1} title="TITLE 1" />
         <Card color="oxfordBlue" backgroundImage={aboutCard2} title="TITLE 2" />
@@ -64,7 +64,7 @@ const PageTwo = () => {
           element="link"
           to="/"
           color="xanthous"
-          label="Contact"
+          label="Facebook"
           arrow="True"
           className="mt-64 flex font-bold font-robotoCondensed"
         />

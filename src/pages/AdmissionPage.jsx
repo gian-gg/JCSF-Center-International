@@ -13,9 +13,8 @@ const AdmissionPage = () => {
         {/* Title and Subtitle */}
         <div className="flex flex-col admissionLG:flex-row gap-4">
           <div className="text-center admissionLG:text-left">
-            <div className="mt-20 text-5xl sm:text-7xl admissionLG:text-8xl font-extrabold font-introRust">
+            <div className="mt-20 text-6xl sm:text-7xl admissionLG:text-8xl font-extrabold font-introRust">
               <p>ADMISSION</p>
-              <p>ENROLLMENT</p>
             </div>
             <h2 className="text-lg sm:text-2xl admissionLG:text-3xl opacity-80 font-balgin font-bold">
               JOIN US NOW <span className="font-colonna">!</span>

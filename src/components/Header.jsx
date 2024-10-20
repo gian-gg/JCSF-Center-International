@@ -52,7 +52,7 @@ const Header = () => {
 
       {/* Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-full bg-tyrianPurple duration-300  ${
+        className={`fixed top-0 right-0 h-[200%] bg-tyrianPurple duration-300  ${
           showNavBar ? "translate-x-0" : "translate-x-full"
         } z-50`} // Ensures the menu is above other content
       >
@@ -66,6 +66,11 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-col items-center gap-4">
+            <NavBar
+              className="w-full p-2 flex flex-col gap-4"
+              isBordered="True"
+            />
+
             <Button
               element="link"
               to="/"
@@ -74,21 +79,16 @@ const Header = () => {
               arrow="True"
               className="flex"
             />
-
-            <NavBar
-              className="w-full p-2 flex flex-col gap-4"
-              isBordered="True"
-            />
           </div>
         </div>
-        <div className="font-robotoMono text-sm px-8 opacity-80">
-          <p>© 2024, JCSF</p>
+        <div className="mt-4 font-robotoMono text-sm px-8 opacity-80">
+          <p>© 2024, JCSF International</p>
           <p>
             Designed by:{" "}
             <Link
               to="https://github.com/gian-gg"
               target="_blank"
-              className="underline"
+              className="underline text-xanthous"
             >
               gian.gg
             </Link>

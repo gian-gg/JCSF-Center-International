@@ -10,7 +10,7 @@ import image6 from "../assets/images/students/image6.jpg";
 
 const StudentPage = () => {
   return (
-    <div className="translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
+    <div className="w-full h-full translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
       <CampusImages />
       <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
         STUDENT LIFE

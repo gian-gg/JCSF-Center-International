@@ -7,7 +7,7 @@ import aboutCard2 from "../assets/images/about/about2.png";
 
 const AdmissionPage = () => {
   return (
-    <div className="mb-12">
+    <div className="mb-12 flex flex-col justify-center items-center">
       {/* Main Content */}
       <div className="flex-1">
         {/* Title and Subtitle */}
@@ -61,6 +61,14 @@ const AdmissionPage = () => {
           <Button element="button" color="xanthous" label="Button 2" />
           <Button element="button" color="oxfordBlue" label="Button 3" />
         </div>
+      </div>
+      <div className="mt-20 text-center font-introRust flex flex-col items-center">
+        <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
+          JCSF CENTER INTERNATIONAL
+        </h1>
+        <h2 className="text-lg sm:text-2xl lg:text-3xl font-balgin font-bold text-oxfordBlue">
+          A Kindergarten in Phnom Penh, Cambodia.
+        </h2>
       </div>
     </div>
   );

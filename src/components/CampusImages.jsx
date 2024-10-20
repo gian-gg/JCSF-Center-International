@@ -35,13 +35,13 @@ const CampusImages = () => {
   let [currentCampus, setCurrentCampus] = useState(0);
 
   return (
-    <div className="w-full h-full flex justify-center text-lavenderBlush text-4xl">
+    <div className="w-full h-full flex justify-center text-lavenderBlush text-2xl">
       <div
-        className="w-4/5 h-full lg:h-[700px] bg-cover bg-center rounded-3xl p-8 pt-[320px] flex justify-between"
+        className="w-[1000px] h-[700px] bg-cover bg-center rounded-3xl p-8 pt-[320px] flex justify-between"
         style={{ backgroundImage: `url(${campusData[currentCampus].src})` }}
       >
         <button
-          className="bg-plum text-white border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
+          className="bg-plum p-4 text-white border border-transparent rounded-full hover:brightness-125 transition-colors h-14 opacity-80"
           onClick={() => {
             if (currentCampus > 0) {
               setCurrentCampus(currentCampus - 1);
@@ -51,7 +51,7 @@ const CampusImages = () => {
           <FaChevronLeft />
         </button>
         <button
-          className="bg-plum border border-transparent rounded-full p-2 hover:brightness-125 transition-colors h-14 opacity-80"
+          className="bg-plum p-4 border border-transparent rounded-full hover:brightness-125 transition-colors h-14 opacity-80"
           onClick={() => {
             if (currentCampus < campusData.length - 1) {
               setCurrentCampus(currentCampus + 1);

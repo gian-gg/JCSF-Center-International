@@ -15,8 +15,8 @@ import aboutCard5 from "../assets/images/about/aboutCard3.jpg";
 
 const PageTwo = () => {
   return (
-    <div className="mb-2 lg:mb-52 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
-      <div className="mt-8 containers flex sm:flex-row flex-col gap-8 items-center">
+    <div className="flex flex-col justify-center items-center mb-2 lg:mb-52 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
+      <div className="w-full flex flex-col items-center justify-center mt-8 sm:flex-row gap-8">
         <Card color="xanthous" backgroundImage={aboutCard1} title="TITLE 1" />
         <Card color="oxfordBlue" backgroundImage={aboutCard2} title="TITLE 2" />
       </div>
@@ -27,7 +27,7 @@ const PageTwo = () => {
         <h2 className="text-lg sm:text-2xl lg:text-3xl font-balgin font-bold">
           A Kindergarten in Phnom Penh, Cambodia.
         </h2>
-        <div className="flex lg:flex-row flex-col justify-center w-[80%] gap-4 lg:gap-10 items-center mt-4">
+        <div className="flex lg:flex-row flex-col justify-center w-[80%] max-w-[1000px] gap-4 lg:gap-10 items-center mt-4">
           <img src={logo} alt="" className="w-64" />
           <p className="font-georgiaPro text-justify text-xl indent-8">
             Incididunt ea commodo ea nisi pariatur nostrud fugiat officia

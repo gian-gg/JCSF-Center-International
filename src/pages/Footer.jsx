@@ -15,7 +15,7 @@ const Footer = () => {
             <p className="px-8 text-center font-georgiaPro">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <div className="text-4xl flex gap-8 text-oxfordBlue">
+            <div className="text-4xl flex gap-8 text-tyrianPurple">
               <Link to="" target="_blank">
                 <FaFacebook />
               </Link>
@@ -40,15 +40,19 @@ const Footer = () => {
           <hr className="border-lavenderBlush opacity-40 h-2 w-full" />
           <div className="text-xanthous font-georgiaPro">
             <p>
-              <strong className="text-lavenderBlush">Mobile</strong>: (555)
+              <strong className="text-lavenderBlush">Mobile:</strong> (555)
               123-4567
             </p>
             <p>
-              <strong className="text-lavenderBlush">Landline</strong>: (555)
+              <strong className="text-lavenderBlush">Landline:</strong> (555)
               987-6543
             </p>
             <p>
-              <strong className="text-lavenderBlush">Address</strong>: 1234 Elm
+              <strong className="text-lavenderBlush">Email:</strong>{" "}
+              123456@email.com
+            </p>
+            <p>
+              <strong className="text-lavenderBlush">Address:</strong> 1234 Elm
               Street, Springfield, IL 62701
             </p>
           </div>

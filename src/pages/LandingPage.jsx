@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import image1 from "../assets/images/students/image3.jpg";
 import image2 from "../assets/images/students/image5.jpg";
 
+import chalk1 from "../assets/images/chalkOverlay/chalk1.png";
+import chalk2 from "../assets/images/chalkOverlay/chalk2.png";
+
 const LandingPage = () => {
   return (
     <div className="pt-20 flex md:flex-row flex-col justify-center">
@@ -33,6 +36,7 @@ const LandingPage = () => {
       </div>
       <div className="flex ml-10 mt-20 md:mt-20 mb-36">
         <div className="w-[300px] h-[350px] md:h-[400px] bg-white -rotate-12 flex justify-center pt-4">
+          <img src={chalk1} className="h-40 absolute -right-28 -top-4 z-20" />
           <div
             className="w-4/5 h-4/5 bg-xanthous"
             style={{
@@ -43,6 +47,7 @@ const LandingPage = () => {
           ></div>
         </div>
         <div className="w-[200px] h-[250px] bg-white rotate-12 flex justify-center pt-2 -translate-x-10 translate-y-20">
+          <img src={chalk2} className="h-40 absolute right-28 top-48 z-20" />
           <div
             className="w-4/5 h-4/5 bg-oxfordBlue"
             style={{

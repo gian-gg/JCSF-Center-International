@@ -8,6 +8,11 @@ import image4 from "../assets/images/students/image4.jpg";
 import image5 from "../assets/images/students/image5.jpg";
 import image6 from "../assets/images/students/image6.jpg";
 
+import chalk3 from "../assets/images/chalkOverlay/chalk3.png";
+import chalk4 from "../assets/images/chalkOverlay/chalk4.png";
+import chalk5 from "../assets/images/chalkOverlay/chalk5.png";
+import chalk6 from "../assets/images/chalkOverlay/chalk5.png";
+
 const StudentPage = () => {
   return (
     <div className="w-full h-full translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
@@ -21,30 +26,49 @@ const StudentPage = () => {
       {/* PHOTOCARDS */}
       <div className="flex flex-col justify-center items-center">
         <div className="flex mt-12 -translate-x-12">
-          <PhotoCard
-            orientation="landscape"
-            x="translate-x-60"
-            y="translate-y-28"
-            lgx="translate-y-28"
-            lgy="translate-x-16"
-            rotation="-rotate-12"
-            color="xanthous"
-            backgroundImage={image1}
-          />
-          <PhotoCard
-            orientation="landscape"
-            color="oxfordBlue"
-            backgroundImage={image2}
-          />
-          <PhotoCard
-            x="-translate-x-40"
-            y="translate-y-40"
-            lgx="-translate-x-16"
-            lgy="translate-y-20"
-            rotation="rotate-[20deg]"
-            color="plum"
-            backgroundImage={image3}
-          />
+          <div>
+            <img
+              src={chalk4}
+              className="h-28 md:h-32 lg:h-48 absolute z-20 right-96 top-24 lg:right-[680px] lg:top-10 -rotate-[16deg]"
+            />
+            <PhotoCard
+              orientation="landscape"
+              x="translate-x-44"
+              y="translate-y-40"
+              lgx="translate-y-28"
+              lgy="translate-x-16"
+              rotation="-rotate-12"
+              color="xanthous"
+              backgroundImage={image1}
+            />
+          </div>
+          <div>
+            <img
+              src={chalk3}
+              className="h-28 md:h-32 lg:h-48 absolute right-28 -top-4 md:right-20 lg:right-44 rotate-12 z-20"
+            />
+
+            <PhotoCard
+              orientation="landscape"
+              color="oxfordBlue"
+              backgroundImage={image2}
+            />
+          </div>
+          <div>
+            <img
+              src={chalk5}
+              className="h-28 md:h-32 lg:h-48 absolute right-48 top-40 z-20"
+            />
+            <PhotoCard
+              x="-translate-x-40"
+              y="translate-y-40"
+              lgx="-translate-x-16"
+              lgy="translate-y-20"
+              rotation="rotate-[20deg]"
+              color="plum"
+              backgroundImage={image3}
+            />
+          </div>
         </div>
         <div className="flex mt-48 lg:mt-0">
           <PhotoCard
@@ -56,6 +80,7 @@ const StudentPage = () => {
             color="plum"
             backgroundImage={image4}
           />
+
           <PhotoCard
             orientation="landscape"
             x="-translate-x-12"

@@ -16,7 +16,7 @@ const Footer = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div className="text-4xl flex gap-8 text-tyrianPurple">
-              <Link to="" target="_blank">
+              <Link to="https://www.facebook.com/jcsfci" target="_blank">
                 <FaFacebook />
               </Link>
               <Link to="" target="_blank">

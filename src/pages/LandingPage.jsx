@@ -5,7 +5,7 @@ import image2 from "../assets/images/students/image5.jpg";
 
 const LandingPage = () => {
   return (
-    <div className="pt-20 flex md:flex-row flex-col">
+    <div className="pt-20 flex md:flex-row flex-col justify-center">
       <div className="flex flex-col lg:flex-row text-lavenderBlush mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}
         <div className="flex flex-col max-w-[680px]">

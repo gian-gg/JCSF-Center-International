@@ -25,8 +25,8 @@ const Header = () => {
   }, [scrollDirect]);
 
   return (
-    <div className="relative font-introRust font-semibold text-lavenderBlush">
-      <header className="flex w-full justify-between items-center text-sm px-4 duration-300">
+    <div className="w-full font-introRust font-semibold text-lavenderBlush">
+      <header className="flex w-full justify-between xl:justify-center xl:items-center text-sm px-4 duration-300">
         <div className="flex items-center gap-10">
           <Logo />
           <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />

@@ -11,7 +11,7 @@ import FooterPage from "./pages/Footer";
 import Header from "./components/Header";
 
 export default function App() {
-  const template = "p-2 px-4 sm:px-20 lg:px-32 w-full";
+  const template = "p-2 px-4 sm:px-20 lg:px-32";
 
   const scrollDirection = useDetectScroll();
   const [showNavbar, setShowNavbar] = useState(true);
@@ -32,9 +32,9 @@ export default function App() {
   }, [scrollDirect]);
 
   return (
-    <div className="overflow-hidden bg-xanthous">
+    <div className="overflow-hidden">
       <div
-        className={`bg-plum z-50 fixed pt-4 duration-300 ${template} ${
+        className={`bg-plum z-50 fixed pt-4 duration-300 w-full ${template} ${
           showNavbar ? "" : "translate-y-[-90px]"
         }`}
       >
@@ -65,7 +65,7 @@ export default function App() {
         </div>
       </Element>
 
-      <div className={`bg-plum min-h-[350px] ${template}`}>
+      <div className={`bg-plum min-h-[350px] flex justify-center ${template}`}>
         <FooterPage />
       </div>
 

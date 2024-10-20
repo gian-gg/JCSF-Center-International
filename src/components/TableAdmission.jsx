@@ -7,9 +7,9 @@ const TableAdmission = ({ num, step, text }) => {
             <td className="font-bold text-3xl lg:text-6xl text-plum px-4 py-2 align-top font-robotoMono">
               {num}
             </td>
-            <td className="font-semibold text-xl lg:text-2xl px-4 py-2 text-gray-700 align-top font-introRust text-left">
+            <td className="font-semibold text-xl lg:text-2xl px-4 py-2 text-oxfordBlue align-top font-introRust text-left">
               {step}
-              <p className="text-lg md:text-base text-gray-600 px-4 py-2 leading-relaxed align-top font-georgiaPro text-justify">
+              <p className="text-lg md:text-base text-black px-4 py-2 leading-relaxed align-top font-georgiaPro text-justify">
                 - {text}
               </p>
             </td>

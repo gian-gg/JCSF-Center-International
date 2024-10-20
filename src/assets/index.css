@@ -29,3 +29,7 @@
   font-family: "Georgia Pro";
   src: url("../assets/fonts/georgiapro-regular.ttf") format("truetype");
 }
+
+body {
+  background-color: #984c84;
+}

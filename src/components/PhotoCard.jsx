@@ -1,4 +1,13 @@
-const PhotoCard = ({ orientation, x, y, lgx, lgy, rotation, color }) => {
+const PhotoCard = ({
+  orientation,
+  x,
+  y,
+  lgx,
+  lgy,
+  rotation,
+  color,
+  backgroundImage,
+}) => {
   // Define the size classes based on orientation
   const sizeClasses =
     orientation === "landscape"
@@ -9,7 +18,14 @@ const PhotoCard = ({ orientation, x, y, lgx, lgy, rotation, color }) => {
     <div
       className={`${sizeClasses} ${x} ${y} ${rotation} lg:${lgx} lg:${lgy} bg-lavenderBlush flex justify-center pt-3`}
     >
-      <div className={`bg-${color} h-4/5 w-[95%]`}></div>
+      <div
+        className={`bg-${color} h-4/5 w-[95%]`}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
     </div>
   );
 };

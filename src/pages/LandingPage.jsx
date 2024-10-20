@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 
+import image1 from "../assets/images/students/image3.jpg";
+import image2 from "../assets/images/students/image5.jpg";
+
 const LandingPage = () => {
   return (
-    <div className="pt-8">
+    <div className="pt-20 flex md:flex-row flex-col">
       <div className="flex flex-col lg:flex-row text-lavenderBlush mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}
         <div className="flex flex-col max-w-[680px]">
@@ -26,6 +29,28 @@ const LandingPage = () => {
               ADMISSION
             </Link>
           </div>
+        </div>
+      </div>
+      <div className="flex ml-10 mt-20 md:mt-20 mb-36">
+        <div className="w-[300px] h-[350px] md:h-[400px] bg-white -rotate-12 flex justify-center pt-4">
+          <div
+            className="w-4/5 h-4/5 bg-xanthous"
+            style={{
+              backgroundImage: `url(${image1})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+        </div>
+        <div className="w-[200px] h-[250px] bg-white rotate-12 flex justify-center pt-2 -translate-x-10 translate-y-20">
+          <div
+            className="w-4/5 h-4/5 bg-oxfordBlue"
+            style={{
+              backgroundImage: `url(${image2})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ export default function App() {
   }, [scrollDirect]);
 
   return (
-    <div className="overflow-hidden bg-plum">
+    <div className="overflow-hidden bg-xanthous">
       <div
         className={`bg-plum z-50 fixed pt-4 duration-300 ${template} ${
           showNavbar ? "" : "translate-y-[-90px]"
@@ -42,7 +42,7 @@ export default function App() {
       </div>
 
       <Element name="home">
-        <div className={`bg-plum bg-cover min-h-[700px] ${template}`}>
+        <div className={`bg-plum bg-cover min-h-[800px] ${template}`}>
           <LandingPage />
         </div>
       </Element>

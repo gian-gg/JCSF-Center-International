@@ -15,6 +15,9 @@ const AdmissionPage = () => {
           <div className="text-center admissionLG:text-left">
             <div className="mt-20 text-6xl sm:text-7xl admissionLG:text-8xl font-extrabold font-introRust text-oxfordBlue">
               <p>ADMISSION</p>
+              <p className="text-4xl sm:text-5xl admissionLG:text-6xl">
+                & ENROLLMENT
+              </p>
             </div>
             <h2 className="text-lg sm:text-2xl admissionLG:text-3xl opacity-80 font-balgin font-bold">
               JOIN US NOW <span className="font-colonna">!</span>

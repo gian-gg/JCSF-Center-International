@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
 import useDetectScroll from "@smakss/react-scroll-direction";
-import NavBar from "../components/NavBar";
-import Button from "../components/Button";
+
 import { LuMenu } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
+
+import Logo from "../components/Logo";
+import NavBar from "../components/NavBar";
+import Button from "../components/Button";
 
 const Header = ({ toggleContactsPage }) => {
   const [showNavBar, setShowNavBar] = useState(false);

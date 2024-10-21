@@ -8,7 +8,14 @@ import About from "./pages/AboutPage";
 import StudentPage from "./pages/StudentPage";
 import AdmissionPage from "./pages/AdmissionPage";
 import FooterPage from "./pages/Footer";
-import Header from "./components/Header";
+import ContactsPage from "./pages/ContactsPage";
+
+import Header from "./pages/Header";
+
+import bg1 from "./assets/images/bg/landingBG.png";
+import bg2 from "./assets/images/bg/studentsBG.png";
+
+import cursor from "./assets/images/cursor.png";
 
 export default function App() {
   const template = "p-2 px-4 sm:px-20 lg:px-32";
@@ -31,18 +38,37 @@ export default function App() {
     };
   }, [scrollDirect]);
 
+  const [isContactsOpen, setIsContactsOpen] = useState(false);
+
+  const toggleContactsPage = () => {
+    setIsContactsOpen(!isContactsOpen);
+  };
+
   return (
-    <div className="overflow-hidden">
+    <div className="w-full h-full overflow-hidden">
       <div
         className={`bg-plum z-50 fixed pt-4 duration-300 w-full ${template} ${
           showNavbar ? "" : "translate-y-[-90px]"
         }`}
       >
-        <Header />
+        <Header toggleContactsPage={toggleContactsPage} />
+      </div>
+
+      <div
+        className={`${isContactsOpen ? "flex" : "hidden"} w-full h-screen fixed z-50 justify-center items-center`}
+      >
+        <ContactsPage isOpen={isContactsOpen} setIsOpen={toggleContactsPage} />
       </div>
 
       <Element name="home">
-        <div className={`bg-plum bg-cover min-h-[800px] ${template}`}>
+        <div
+          className={`bg-plum bg-cover min-h-[800px] ${template}`}
+          style={{
+            backgroundImage: `url(${bg1})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <LandingPage />
         </div>
       </Element>
@@ -54,7 +80,12 @@ export default function App() {
       </Element>
 
       <Element name="student">
-        <div className={`bg-oxfordBlue max-h-[2000px] ${template}`}>
+        <div
+          className={`bg-oxfordBlue max-h-[2000px] ${template}`}
+          style={{
+            backgroundImage: `url(${bg2})`,
+          }}
+        >
           <StudentPage />
         </div>
       </Element>
@@ -65,7 +96,14 @@ export default function App() {
         </div>
       </Element>
 
-      <div className={`bg-plum min-h-[350px] flex justify-center ${template}`}>
+      <div
+        className={`bg-plum min-h-[350px] flex justify-center ${template}`}
+        style={{
+          backgroundImage: `url(${bg1})`,
+          backgroundSize: "cover",
+          backgroundPosition: "bottom right",
+        }}
+      >
         <FooterPage />
       </div>
 

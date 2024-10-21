@@ -11,7 +11,9 @@ import image6 from "../assets/images/students/image6.jpg";
 import chalk3 from "../assets/images/chalkOverlay/chalk3.png";
 import chalk4 from "../assets/images/chalkOverlay/chalk4.png";
 import chalk5 from "../assets/images/chalkOverlay/chalk5.png";
-import chalk6 from "../assets/images/chalkOverlay/chalk5.png";
+import chalk6 from "../assets/images/chalkOverlay/chalk6.png";
+import chalk7 from "../assets/images/chalkOverlay/chalk7.png";
+import chalk8 from "../assets/images/chalkOverlay/chalk5.png";
 
 const StudentPage = () => {
   return (
@@ -70,35 +72,53 @@ const StudentPage = () => {
             />
           </div>
         </div>
-        <div className="flex mt-48 lg:mt-0">
-          <PhotoCard
-            x="translate-x-12"
-            y="-translate-y-40"
-            lgx="-translate-x-20"
-            lgy="-translate-y-20"
-            rotation="-rotate-2"
-            color="plum"
-            backgroundImage={image4}
-          />
+        <div className="flex mt-48 lg:mt-0 translate-x-1">
+          <div>
+            <img
+              src={chalk6}
+              className="h-28 md:h-32 lg:h-48 absolute right-48 md:right-56 lg:right-96 -top-56 rotate-12 z-20"
+            />
+            <PhotoCard
+              x="translate-x-12"
+              y="-translate-y-40"
+              lgx="-translate-x-20"
+              lgy="-translate-y-20"
+              rotation="-rotate-2"
+              color="plum"
+              backgroundImage={image4}
+            />
+          </div>
 
+          <div>
+            <img
+              src={chalk7}
+              className="h-16 lg:h-36 absolute left-36 top-24 lg:left-56 lg:top-56 -rotate-12 z-20"
+            />
+            <PhotoCard
+              orientation="landscape"
+              x="-translate-x-12"
+              lgy="-translate-y-20"
+              rotation="rotate-2"
+              color="xanthous"
+              backgroundImage={image5}
+            />
+          </div>
+        </div>
+        <div className="translate-x-1">
+          <img
+            src={chalk8}
+            className="h-28 md:h-32 lg:h-48 absolute -right-16 lg:-right-24 -top-48 rotate-[40deg] z-20"
+          />
           <PhotoCard
             orientation="landscape"
-            x="-translate-x-12"
-            lgy="-translate-y-20"
-            rotation="rotate-2"
-            color="xanthous"
-            backgroundImage={image5}
+            y="-translate-y-40"
+            lgx="-translate-x-20"
+            lgy="-translate-y-80"
+            rotation="-rotate-12"
+            color="oxfordBlue"
+            backgroundImage={image6}
           />
         </div>
-        <PhotoCard
-          orientation="landscape"
-          y="-translate-y-60"
-          lgx="-translate-x-20"
-          lgy="-translate-y-80"
-          rotation="-rotate-12"
-          color="oxfordBlue"
-          backgroundImage={image6}
-        />
       </div>
     </div>
   );

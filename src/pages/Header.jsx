@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from "react";
-import Logo from "./Logo";
-
+import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
 import useDetectScroll from "@smakss/react-scroll-direction";
-
-import NavBar from "./NavBar";
-import Button from "./Button";
-
+import NavBar from "../components/NavBar";
+import Button from "../components/Button";
 import { LuMenu } from "react-icons/lu";
 import { MdOutlineClose } from "react-icons/md";
 
-const Header = () => {
+const Header = ({ toggleContactsPage }) => {
   const [showNavBar, setShowNavBar] = useState(false);
 
-  const toggleNavBar = () => setShowNavBar(!showNavBar);
+  const toggleNavBar = () => setShowNavBar((prev) => !prev);
 
   const scrollDirection = useDetectScroll();
-  let scrollDirect = scrollDirection.scrollDir;
+  const scrollDirect = scrollDirection.scrollDir;
 
   useEffect(() => {
-    if (showNavBar) {
-      toggleNavBar();
+    if (scrollDirect === "down" && showNavBar) {
+      setShowNavBar(false); // Close the navbar when scrolling down
     }
-  }, [scrollDirect]);
+  }, [scrollDirect, showNavBar]);
+
+  const openContactsPage = () => {
+    toggleContactsPage(); // Call the prop function
+    setShowNavBar(false); // Close the navbar
+  };
 
   return (
     <div className="w-full font-introRust font-semibold text-lavenderBlush">
@@ -38,6 +40,7 @@ const Header = () => {
           label="Contact"
           arrow="True"
           className="hidden xl:flex"
+          onClick={openContactsPage}
         />
 
         {!showNavBar && (
@@ -52,7 +55,7 @@ const Header = () => {
 
       {/* Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-[200%] bg-tyrianPurple duration-300  ${
+        className={`fixed top-0 right-0 h-[200%] bg-tyrianPurple duration-300 ${
           showNavBar ? "translate-x-0" : "translate-x-full"
         } z-50`} // Ensures the menu is above other content
       >
@@ -78,6 +81,7 @@ const Header = () => {
               label="Contact"
               arrow="True"
               className="flex"
+              onClick={openContactsPage}
             />
           </div>
         </div>

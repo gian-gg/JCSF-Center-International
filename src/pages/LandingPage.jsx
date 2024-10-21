@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import image1 from "../assets/images/students/image3.jpg";
 import image2 from "../assets/images/students/image5.jpg";
@@ -9,26 +9,32 @@ import chalk2 from "../assets/images/chalkOverlay/chalk2.png";
 const LandingPage = () => {
   return (
     <div className="pt-20 flex md:flex-row flex-col justify-center">
-      <div className="flex flex-col lg:flex-row text-lavenderBlush mt-12 ml-4 lg:mt-32 lg:ml-20">
+      <div className="flex flex-col lg:flex-row text-white mt-12 ml-4 lg:mt-32 lg:ml-20">
         {/* quote and buttons */}
         <div className="flex flex-col max-w-[680px]">
           <div className="flex gap-4 lg:gap-6">
-            <div className="bg-lavenderBlush h-vh w-14 opacity-50 rounded"></div>
+            <div className="bg-white h-vh w-14 opacity-50 rounded"></div>
             <div className="">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-eksellDisplay italic">
-                "Do minim do velit pariatur nulla excepteur reprehenderit esse
-                excepteur sunt ipsum."
+                "Do minim do velit pariatur nulla reprehenderit esse excepteur
+                sunt ipsum."
               </h1>
-              <p className="flex justify-end pr-12 lg:pr-32 font-georgiaPro opacity-80">
+              <p className="flex justify-end pt-8 pr-12 lg:pr-32 font-georgiaPro opacity-80">
                 ~ laborum enim'
               </p>
             </div>
           </div>
-          <div className="hidden lg:flex px-14 gap-4 font-introRust text-lg">
-            <Link className="bg-tyrianPurple rounded-full py-2 px-4 hover:opacity-50">
+          <div className="hidden lg:flex pt-4 px-14 gap-4 font-introRust text-lg">
+            <Link
+              to="about"
+              className="bg-tyrianPurple rounded-full py-2 px-4 hover:opacity-50 cursor-pointer"
+            >
               ABOUT US
             </Link>
-            <Link className="bg-lavenderBlush text-black rounded-full py-2 px-4 hover:opacity-50">
+            <Link
+              to="admission"
+              className="bg-white text-black rounded-full py-2 px-4 hover:opacity-50 cursor-pointer"
+            >
               ADMISSION
             </Link>
           </div>

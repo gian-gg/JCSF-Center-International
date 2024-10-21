@@ -24,7 +24,7 @@ const LandingPage = () => {
               </p>
             </div>
           </div>
-          <div className="hidden lg:flex pt-4 px-14 gap-4 font-introRust text-lg">
+          <div className="hidden md:flex pt-4 px-14 gap-4 font-introRust text-lg">
             <Link
               to="about"
               className="bg-tyrianPurple rounded-full py-2 px-4 hover:opacity-50 cursor-pointer"
@@ -40,7 +40,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex ml-10 mt-20 md:mt-20 mb-36">
+      <div className="flex md:hidden lg:flex ml-10 mt-20 md:mt-20 mb-36">
         <div className="w-[300px] h-[350px] md:h-[400px] bg-white -rotate-12 flex justify-center pt-4">
           <img src={chalk1} className="h-40 absolute -right-28 -top-4 z-20" />
           <div

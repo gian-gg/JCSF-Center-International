@@ -37,7 +37,7 @@ const CampusImages = () => {
   return (
     <div className="w-full h-full flex justify-center text-lavenderBlush text-2xl">
       <div
-        className="w-[1000px] h-[700px] bg-cover bg-center rounded-3xl p-8 pt-[320px] flex justify-between"
+        className="w-[1000px] h-[700px] bg-cover bg-center rounded-3xl p-8 flex justify-between items-center"
         style={{ backgroundImage: `url(${campusData[currentCampus].src})` }}
       >
         <button

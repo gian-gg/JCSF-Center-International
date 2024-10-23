@@ -9,7 +9,7 @@ import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
 import Button from "../components/Button";
 
-const Header = ({ toggleContactsPage }) => {
+const Header = ({ togglePopUpPage, setPopUpContent }) => {
   const [showNavBar, setShowNavBar] = useState(false);
 
   const toggleNavBar = () => setShowNavBar((prev) => !prev);
@@ -23,8 +23,9 @@ const Header = ({ toggleContactsPage }) => {
     }
   }, [scrollDirect, showNavBar]);
 
-  const openContactsPage = () => {
-    toggleContactsPage(); // Call the prop function
+  const openPopUpPage = () => {
+    setPopUpContent("contacts");
+    togglePopUpPage(); // Call the prop function
     setShowNavBar(false); // Close the navbar
   };
 
@@ -42,7 +43,7 @@ const Header = ({ toggleContactsPage }) => {
           label="Contact"
           arrow="True"
           className="hidden xl:flex"
-          onClick={openContactsPage}
+          onClick={openPopUpPage}
         />
 
         {!showNavBar && (
@@ -83,7 +84,7 @@ const Header = ({ toggleContactsPage }) => {
               label="Contact"
               arrow="True"
               className="flex"
-              onClick={openContactsPage}
+              onClick={openPopUpPage}
             />
           </div>
         </div>

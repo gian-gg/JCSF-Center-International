@@ -4,16 +4,24 @@ import useDetectScroll from "@smakss/react-scroll-direction";
 import { Element } from "react-scroll";
 
 import LandingPage from "./pages/LandingPage";
-import About from "./pages/AboutPage";
+import AboutPage from "./pages/AboutPage";
 import StudentPage from "./pages/StudentPage";
 import AdmissionPage from "./pages/AdmissionPage";
 import FooterPage from "./pages/Footer";
 import ContactsPage from "./pages/ContactsPage";
 
+import PopUp from "./components/PopUp";
+
+import About1 from "./pages/aboutPages/AboutPage1";
+import About2 from "./pages/aboutPages/AboutPage2";
+import Admission1 from "./pages/admissionPages/AdmissionPage1";
+import Admission2 from "./pages/admissionPages/AdmissionPage2";
+
 import Header from "./pages/Header";
 
 import bg1 from "./assets/images/bg/bg1.png";
 import bg2 from "./assets/images/bg/bg2.png";
+import bg3 from "./assets/images/bg/bg3.png";
 
 import cursor from "./assets/images/cursor.png";
 
@@ -38,10 +46,26 @@ export default function App() {
     };
   }, [scrollDirect]);
 
-  const [isContactsOpen, setIsContactsOpen] = useState(false);
+  const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+  const [popUpContent, setPopUpContent] = useState(null);
 
-  const toggleContactsPage = () => {
-    setIsContactsOpen(!isContactsOpen);
+  const togglePopUpPage = () => {
+    setIsPopUpOpen(!isPopUpOpen);
+  };
+
+  const getPopUpContent = () => {
+    if (popUpContent === "contacts") {
+      return ContactsPage;
+    } else if (popUpContent === "about1") {
+      return About1;
+    } else if (popUpContent === "about2") {
+      return About2;
+    } else if (popUpContent === "admission1") {
+      return Admission1;
+    } else if (popUpContent === "admission2") {
+      return Admission2;
+    }
+    return null; // return null if no condition matches
   };
 
   return (
@@ -51,13 +75,21 @@ export default function App() {
           showNavbar ? "" : "translate-y-[-90px]"
         }`}
       >
-        <Header toggleContactsPage={toggleContactsPage} />
+        <Header
+          togglePopUpPage={togglePopUpPage}
+          setPopUpContent={setPopUpContent}
+        />
       </div>
 
       <div
-        className={`${isContactsOpen ? "flex" : "hidden"} w-full h-screen fixed z-50 justify-center items-center`}
+        className={`${isPopUpOpen ? "flex" : "hidden"} w-full h-screen fixed z-50 justify-center items-center`}
       >
-        <ContactsPage isOpen={isContactsOpen} setIsOpen={toggleContactsPage} />
+        <PopUp
+          isOpen={isPopUpOpen}
+          setIsOpen={togglePopUpPage}
+          Content={getPopUpContent()}
+          bg={bg3}
+        />
       </div>
 
       <Element name="home">
@@ -75,7 +107,10 @@ export default function App() {
 
       <Element name="about">
         <div className={`bg-lavenderBlush min-h-[1900px] ${template}`}>
-          <About />
+          <AboutPage
+            togglePopUpPage={togglePopUpPage}
+            setPopUpContent={setPopUpContent}
+          />
         </div>
       </Element>
 
@@ -92,7 +127,10 @@ export default function App() {
 
       <Element name="admission">
         <div className={`bg-lavenderBlush min-h-[1200px] ${template}`}>
-          <AdmissionPage />
+          <AdmissionPage
+            togglePopUpPage={togglePopUpPage}
+            setPopUpContent={setPopUpContent}
+          />
         </div>
       </Element>
 

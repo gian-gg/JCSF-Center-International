@@ -5,7 +5,11 @@ import Card from "../components/Card";
 import aboutCard1 from "../assets/images/about/about1.png";
 import aboutCard2 from "../assets/images/about/about2.png";
 
-const AdmissionPage = () => {
+const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
+  const openPopUpPage = () => {
+    togglePopUpPage(); // Call the prop function
+    setShowNavBar(false); // Close the navbar
+  };
   return (
     <div className="mb-12 flex flex-col justify-center items-center">
       {/* Main Content */}
@@ -25,11 +29,25 @@ const AdmissionPage = () => {
           </div>
           {/* Cards Section */}
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center admissionLG:translate-y-[-80px] mt-12 md:mt-0">
-            <Card color="plum" backgroundImage={aboutCard1} title="TITLE 1" />
+            <Card
+              color="plum"
+              backgroundImage={aboutCard1}
+              title="TITLE 1"
+              togglePopUpPage={togglePopUpPage}
+              onClick={() => {
+                setPopUpContent("admission1");
+                openPopUpPage();
+              }}
+            />
             <Card
               color="xanthous"
               backgroundImage={aboutCard2}
               title="TITLE 2"
+              togglePopUpPage={togglePopUpPage}
+              onClick={() => {
+                setPopUpContent("admission2");
+                openPopUpPage();
+              }}
             />
           </div>
         </div>

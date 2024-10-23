@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
 
-const Card = ({ className, url, color, backgroundImage, title }) => {
+const Card = ({ className, color, backgroundImage, title, onClick }) => {
   return (
-    <Link
-      to={url}
+    <button
+      onClick={onClick}
       className={`h-96 w-4/5 lg:w-64 rounded-3xl ${className} bg-${color} translate-x-0`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -19,7 +17,7 @@ const Card = ({ className, url, color, backgroundImage, title }) => {
       <h1 className="text-black font-introRust bg-white p-2 w-32 font-bold rounded-lg text-center absolute left-8 bottom-8">
         {title}
       </h1>
-    </Link>
+    </button>
   );
 };
 

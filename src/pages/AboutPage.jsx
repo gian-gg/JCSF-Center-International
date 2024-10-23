@@ -13,12 +13,34 @@ import aboutCard3 from "../assets/images/about/aboutCard1.jpg";
 import aboutCard4 from "../assets/images/about/aboutCard2.jpg";
 import aboutCard5 from "../assets/images/about/aboutCard3.jpg";
 
-const PageTwo = () => {
+const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
+  const openPopUpPage = () => {
+    togglePopUpPage(); // Call the prop function
+    setShowNavBar(false); // Close the navbar
+  };
   return (
     <div className="flex flex-col justify-center items-center mb-2 lg:mb-52 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
       <div className="w-full flex flex-col items-center justify-center mt-8 sm:flex-row gap-8 lg:-translate-x-40 xl:-translate-x-80">
-        <Card color="xanthous" backgroundImage={aboutCard1} title="TITLE 1" />
-        <Card color="oxfordBlue" backgroundImage={aboutCard2} title="TITLE 2" />
+        <Card
+          color="xanthous"
+          backgroundImage={aboutCard1}
+          title="TITLE 1"
+          togglePopUpPage={togglePopUpPage}
+          onClick={() => {
+            setPopUpContent("about1");
+            openPopUpPage();
+          }}
+        />
+        <Card
+          color="oxfordBlue"
+          backgroundImage={aboutCard2}
+          title="TITLE 2"
+          togglePopUpPage={togglePopUpPage}
+          onClick={() => {
+            setPopUpContent("about2");
+            openPopUpPage();
+          }}
+        />
       </div>
       <div className="mt-20 text-center font-introRust flex flex-col items-center">
         <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
@@ -73,4 +95,4 @@ const PageTwo = () => {
   );
 };
 
-export default PageTwo;
+export default AboutPage;

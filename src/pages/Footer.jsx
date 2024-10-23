@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import Socials from "../components/Socials";
 
 import Logo from "../components/Logo";
 import NavBar from "../components/NavBar";
@@ -16,15 +14,7 @@ const Footer = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div className="text-4xl flex gap-8 text-tyrianPurple">
-              <Link to="https://www.facebook.com/jcsfci" target="_blank">
-                <FaFacebook />
-              </Link>
-              <Link to="" target="_blank">
-                <FaInstagram />
-              </Link>
-              <Link to="" target="_blank">
-                <FaXTwitter />
-              </Link>
+              <Socials />
             </div>
           </div>
           <div className="lg:w-[40%] mt-12 lg:mt-0 flex flex-col justify-center align-middle items-center gap-4">

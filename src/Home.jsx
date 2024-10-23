@@ -12,8 +12,8 @@ import ContactsPage from "./pages/ContactsPage";
 
 import Header from "./pages/Header";
 
-import bg1 from "./assets/images/bg/landingBG.png";
-import bg2 from "./assets/images/bg/studentsBG.png";
+import bg1 from "./assets/images/bg/bg1.png";
+import bg2 from "./assets/images/bg/bg2.png";
 
 import cursor from "./assets/images/cursor.png";
 

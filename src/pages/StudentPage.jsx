@@ -19,10 +19,18 @@ const StudentPage = () => {
   return (
     <div className="w-full h-full translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
       <CampusImages />
-      <h1 className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust">
+      <h1
+        className="mt-20 text-5xl sm:text-7xl lg:text-8xl font-extrabold font-introRust"
+        data-aos="fade-right"
+        data-aos-once="true"
+      >
         STUDENT LIFE
       </h1>
-      <h2 className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold">
+      <h2
+        className="text-lg sm:text-2xl lg:text-3xl opacity-80 font-balgin font-bold  animate-pulse"
+        data-aos="fade-in"
+        data-aos-once="true"
+      >
         Checkout our Campus <span className="font-colonna">!</span>
       </h2>
       {/* PHOTOCARDS */}
@@ -32,6 +40,8 @@ const StudentPage = () => {
             <img
               src={chalk4}
               className="h-28 md:h-32 lg:h-48 absolute z-20 right-96 top-24 lg:right-[680px] lg:top-10 -rotate-[16deg]"
+              data-aos="fade-in"
+              data-aos-once="true"
             />
             <PhotoCard
               orientation="landscape"
@@ -48,6 +58,8 @@ const StudentPage = () => {
             <img
               src={chalk3}
               className="h-28 md:h-32 lg:h-48 absolute right-28 -top-4 md:right-20 lg:right-44 rotate-12 z-20"
+              data-aos="fade-in"
+              data-aos-once="true"
             />
 
             <PhotoCard
@@ -60,6 +72,8 @@ const StudentPage = () => {
             <img
               src={chalk5}
               className="h-28 md:h-32 lg:h-48 absolute right-48 top-40 z-20"
+              data-aos="fade-in"
+              data-aos-once="true"
             />
             <PhotoCard
               x="-translate-x-40"
@@ -77,6 +91,8 @@ const StudentPage = () => {
             <img
               src={chalk6}
               className="h-28 md:h-32 lg:h-48 absolute right-48 md:right-56 lg:right-96 -top-56 rotate-12 z-20"
+              data-aos="fade-in"
+              data-aos-once="true"
             />
             <PhotoCard
               x="translate-x-12"
@@ -93,6 +109,8 @@ const StudentPage = () => {
             <img
               src={chalk7}
               className="h-16 lg:h-36 absolute left-36 top-24 lg:left-56 lg:top-56 -rotate-12 z-20"
+              data-aos="fade-in"
+              data-aos-once="true"
             />
             <PhotoCard
               orientation="landscape"
@@ -108,6 +126,8 @@ const StudentPage = () => {
           <img
             src={chalk8}
             className="h-28 md:h-32 lg:h-48 absolute -right-16 lg:-right-24 -top-48 rotate-[40deg] z-20"
+            data-aos="fade-in"
+            data-aos-once="true"
           />
           <PhotoCard
             orientation="landscape"

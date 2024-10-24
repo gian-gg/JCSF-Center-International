@@ -25,7 +25,14 @@ import bg3 from "./assets/images/bg/bg3.png";
 
 import cursor from "./assets/images/cursor.png";
 
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
 export default function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const template = "p-2 px-4 sm:px-20 lg:px-32";
 
   const scrollDirection = useDetectScroll();
@@ -153,7 +160,7 @@ export default function App() {
           <Link
             to="https://github.com/gian-gg"
             target="_blank"
-            className="underline text-xanthous"
+            className="underline text-xanthous hover:opacity-60 transition-all duration-500 animate-pulse"
           >
             gian.gg
           </Link>

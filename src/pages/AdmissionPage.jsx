@@ -16,14 +16,18 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
       <div className="flex-1">
         {/* Title and Subtitle */}
         <div className="flex flex-col admissionLG:flex-row gap-4">
-          <div className="text-center admissionLG:text-left">
+          <div
+            className="text-center admissionLG:text-left"
+            data-aos="fade-left"
+            data-aos-once="true"
+          >
             <div className="mt-20 text-6xl sm:text-7xl admissionLG:text-8xl font-extrabold font-introRust text-oxfordBlue">
               <p>ADMISSION</p>
               <p className="text-4xl sm:text-5xl admissionLG:text-6xl">
                 & ENROLLMENT
               </p>
             </div>
-            <h2 className="text-lg sm:text-2xl admissionLG:text-3xl opacity-80 font-balgin font-bold">
+            <h2 className="text-lg sm:text-2xl admissionLG:text-3xl opacity-80 font-balgin font-bold animate-pulse">
               JOIN US NOW <span className="font-colonna">!</span>
             </h2>
           </div>
@@ -60,16 +64,19 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
           <TableAdmission
+            delay="200"
             num="02"
             step="STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
           <TableAdmission
+            delay="400"
             num="03"
             step="STEP STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
           />
           <TableAdmission
+            delay="600"
             num="04"
             step="STEP STEP STEP STEP"
             text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
@@ -77,13 +84,21 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
         </div>
 
         {/* Buttons Section */}
-        <div className="mt-12 flex flex-col md:flex-row justify-center gap-8 items-center">
+        <div
+          className="mt-12 flex flex-col md:flex-row justify-center gap-8 items-center"
+          data-aos="zoom-in"
+          data-aos-once="true"
+        >
           <Button element="button" color="plum" label="Button 1" />
           <Button element="button" color="xanthous" label="Button 2" />
           <Button element="button" color="oxfordBlue" label="Button 3" />
         </div>
       </div>
-      <div className="mt-20 text-center font-introRust flex flex-col items-center">
+      <div
+        className="mt-20 text-center font-introRust flex flex-col items-center animate-pulse"
+        data-aos="flip-right"
+        data-aos-once="true"
+      >
         <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
           JCSF CENTER INTERNATIONAL
         </h1>

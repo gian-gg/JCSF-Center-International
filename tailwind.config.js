@@ -20,8 +20,32 @@ module.exports = {
         dellaRespira: ["Della Respira", "serif"],
         robotoMono: ["Roboto Mono", "monospace"],
       },
-      backgroundImage: {
-        imageOne: "url('./src/assets/images/bg.jpg')",
+      keyframes: {
+        "slide-in-up": {
+          "0%": {
+            transform: "translateY(-100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+        rotation: {
+          "0%": {
+            transform: "translateX(var(--x)) translateY(var(--y)) rotate(0deg)",
+            opacity: "0",
+          },
+          "100%": {
+            transform:
+              "translateX(var(--x)) translateY(var(--y)) rotate(var(--rotation))",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        slideInUp: "slide-in-up 1s ease-in-out",
+        rotation: "rotation 1s ease-in-out",
       },
       colors: {
         plum: "#984C84",

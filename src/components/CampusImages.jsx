@@ -35,7 +35,10 @@ const CampusImages = () => {
   let [currentCampus, setCurrentCampus] = useState(0);
 
   return (
-    <div className="w-full h-full flex justify-center text-lavenderBlush text-2xl">
+    <div
+      className="w-full h-full flex justify-center text-lavenderBlush text-2xl"
+      data-aos="zoom-in"
+    >
       <div
         className="w-[1000px] h-[700px] bg-cover bg-center rounded-3xl p-8 flex justify-between items-center"
         style={{ backgroundImage: `url(${campusData[currentCampus].src})` }}

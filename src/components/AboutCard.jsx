@@ -1,6 +1,14 @@
-const AboutCard = ({ url, color, className, label, text, backgroundImage }) => {
+const AboutCard = ({
+  url,
+  color,
+  className,
+  label,
+  text,
+  backgroundImage,
+  delay,
+}) => {
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-delay={delay} data-aos-once="true">
       <div className="h-96 w-80">
         <div
           className={`bg-${color} h-full w-full rounded-3xl ${className}`}

@@ -16,7 +16,7 @@ const Button = ({ element, to, className, color, label, arrow, onClick }) => {
           onClick(); // Call the onClick function for button
         }
       }}
-      className={`${className} items-center justify-center hover:opacity-50 text-xl w-48 lg:w-42 h-12 rounded-full bg-${color} text-white font-introRust`}
+      className={`${className} items-center justify-center hover:opacity-50 text-xl w-48 lg:w-42 h-12 rounded-full bg-${color} text-white font-introRust hover:scale-[110%] hover:-translate-y-1 hover:opacity-60 transition-all duration-500`}
     >
       <div className="flex items-center justify-center align-middle">
         <p>{label}</p>

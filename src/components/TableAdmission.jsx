@@ -1,6 +1,11 @@
-const TableAdmission = ({ num, step, text }) => {
+const TableAdmission = ({ num, step, text, delay }) => {
   return (
-    <div className="w-full">
+    <div
+      className="w-full"
+      data-aos="fade-left"
+      data-aos-once="true"
+      data-aos-delay={delay}
+    >
       <table className=" table-auto border-separate border-spacing-4">
         <tbody>
           <tr className="text-center">

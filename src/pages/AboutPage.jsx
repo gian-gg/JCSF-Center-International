@@ -3,7 +3,6 @@ import logo from "../assets/images/logo.png";
 import Card from "../components/Card";
 import AboutCard from "../components/AboutCard";
 
-import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 import aboutCard1 from "../assets/images/about/about1.png";
@@ -20,33 +19,43 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
   };
   return (
     <div className="flex flex-col justify-center items-center mb-2 lg:mb-52 lg:mt-10 translate-y-[-100px] lg:translate-y-[-140px]">
-      <div className="w-full flex flex-col items-center justify-center mt-8 sm:flex-row gap-8 lg:-translate-x-40 xl:-translate-x-80">
-        <Card
-          color="xanthous"
-          backgroundImage={aboutCard1}
-          title="TITLE 1"
-          togglePopUpPage={togglePopUpPage}
-          onClick={() => {
-            setPopUpContent("about1");
-            openPopUpPage();
-          }}
-        />
-        <Card
-          color="oxfordBlue"
-          backgroundImage={aboutCard2}
-          title="TITLE 2"
-          togglePopUpPage={togglePopUpPage}
-          onClick={() => {
-            setPopUpContent("about2");
-            openPopUpPage();
-          }}
-        />
+      <div className="w-full  lg:-translate-x-40 xl:-translate-x-80">
+        <div className="flex flex-col items-center justify-center mt-8 sm:flex-row gap-8">
+          <Card
+            color="xanthous"
+            backgroundImage={aboutCard1}
+            title="TITLE 1"
+            togglePopUpPage={togglePopUpPage}
+            onClick={() => {
+              setPopUpContent("about1");
+              openPopUpPage();
+            }}
+          />
+          <Card
+            color="oxfordBlue"
+            backgroundImage={aboutCard2}
+            title="TITLE 2"
+            togglePopUpPage={togglePopUpPage}
+            onClick={() => {
+              setPopUpContent("about2");
+              openPopUpPage();
+            }}
+          />
+        </div>
       </div>
       <div className="mt-20 text-center font-introRust flex flex-col items-center">
-        <h1 className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum">
+        <h1
+          className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum"
+          data-aos="fade-right"
+          data-aos-once="true"
+        >
           JCSF CENTER INTERNATIONAL
         </h1>
-        <h2 className="text-lg sm:text-2xl lg:text-3xl font-balgin font-bold">
+        <h2
+          className="text-lg sm:text-2xl lg:text-3xl font-balgin font-bold animate-pulse"
+          data-aos="fade-in"
+          data-aos-once="true"
+        >
           A Kindergarten in Phnom Penh, Cambodia.
         </h2>
         <div className="flex lg:flex-row flex-col justify-center w-[80%] max-w-[1000px] gap-4 lg:gap-10 items-center mt-4">
@@ -64,32 +73,37 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
           <AboutCard
+            delay="300"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard3}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
+            delay="500"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard4}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
+            delay="700"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard5}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
         </div>
-        <Button
-          element="link"
-          to="/"
-          color="xanthous"
-          label="Facebook"
-          arrow="True"
-          className="mt-64 flex font-bold font-robotoCondensed"
-        />
+        <div data-aos="zoom-in" data-aos-once="true">
+          <Button
+            element="link"
+            to="/"
+            color="xanthous"
+            label="Facebook"
+            arrow="True"
+            className="mt-64 flex font-bold font-robotoCondensed"
+          />
+        </div>
       </div>
     </div>
   );

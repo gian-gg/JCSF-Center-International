@@ -14,7 +14,7 @@ const TableAdmission = ({ num, step, text, delay }) => {
             </td>
             <td className="lg:font-semibold text-xl lg:text-2xl px-4 py-2 text-oxfordBlue align-top font-introRust text-left">
               {step}
-              <p className="text-lg md:text-base text-black px-4 py-2 leading-relaxed align-top font-georgiaPro text-justify">
+              <p className="text-sm md:text-base text-black px-4 py-2 leading-relaxed align-top font-georgiaPro text-justify">
                 - {text}
               </p>
             </td>

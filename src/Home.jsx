@@ -23,8 +23,6 @@ import bg1 from "./assets/images/bg/bg1.png";
 import bg2 from "./assets/images/bg/bg2.png";
 import bg3 from "./assets/images/bg/bg3.png";
 
-import cursor from "./assets/images/cursor.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 

@@ -153,7 +153,7 @@ export default function App() {
           <Link
             to="https://github.com/gian-gg"
             target="_blank"
-            className="underline text-xanthous"
+            className="underline text-xanthous hover:opacity-60 transition-all duration-500"
           >
             gian.gg
           </Link>

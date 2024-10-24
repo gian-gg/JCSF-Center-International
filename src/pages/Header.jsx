@@ -34,7 +34,10 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
       <header className="flex w-full justify-between xl:justify-center xl:items-center text-sm px-4 duration-300">
         <div className="flex items-center gap-10">
           <Logo />
-          <NavBar className="hidden xl:flex gap-8 text-base tracking-wider" />
+          <NavBar
+            className="hidden xl:flex gap-8 text-base tracking-wider"
+            isBordered="nav"
+          />
         </div>
         <Button
           element="link"
@@ -42,39 +45,36 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
           color="xanthous"
           label="Contact"
           arrow="True"
-          className="hidden xl:flex"
+          className="hidden xl:flex animate-fadeIn"
           onClick={openPopUpPage}
         />
 
         {!showNavBar && (
           <button
-            className="block xl:hidden hover:opacity-50 text-4xl"
+            className="block xl:hidden text-4xl animate-fadeIn"
             onClick={toggleNavBar}
           >
-            <LuMenu />
+            <LuMenu className="h-12 text-[100%] hover:text-[110%] hover:opacity-60 transition-all duration-500" />
           </button>
         )}
       </header>
 
       {/* Menu Overlay */}
       <div
-        className={`fixed top-0 right-0 h-[200%] bg-tyrianPurple duration-300 ${
+        className={`fixed top-0 right-0 h-[200%] bg-tyrianPurple transition-all duration-500 ${
           showNavBar ? "translate-x-0" : "translate-x-full"
         } z-50`} // Ensures the menu is above other content
       >
         <div className="p-4">
           <div className="flex justify-end">
-            <button
-              className="m-2 hover:opacity-50 text-4xl"
-              onClick={toggleNavBar}
-            >
-              <MdOutlineClose />
+            <button className="m-2 text-4xl" onClick={toggleNavBar}>
+              <MdOutlineClose className="h-12 text-[100%] hover:text-[110%] hover:opacity-60 transition-all duration-500" />
             </button>
           </div>
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 ">
             <NavBar
-              className="w-full p-2 flex flex-col gap-4"
-              isBordered="True"
+              className={`w-full p-2 flex flex-col gap-4 xl:hidden`}
+              isBordered={true}
             />
 
             <Button
@@ -90,12 +90,12 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
         </div>
         <div className="mt-4 font-robotoMono text-sm px-8 opacity-80">
           <p>© 2024, JCSF International</p>
-          <p>
+          <p className="">
             Designed by:{" "}
             <Link
               to="https://github.com/gian-gg"
               target="_blank"
-              className="underline text-xanthous"
+              className="underline text-xanthous hover:opacity-60 transition-all duration-500"
             >
               gian.gg
             </Link>

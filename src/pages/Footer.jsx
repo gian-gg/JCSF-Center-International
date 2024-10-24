@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div className="lg:w-[40%] mt-12 lg:mt-0 flex flex-col justify-center align-middle items-center gap-4">
             <NavBar
-              isBordered="true"
+              isBordered={false}
               className="p-2 flex flex-col gap-4 font-introRust text-center md:text-left"
             />
           </div>

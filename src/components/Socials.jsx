@@ -11,6 +11,7 @@ const Socials = () => {
         target="_blank"
         className="hover:scale-110 hover:-translate-y-1 hover:brightness-150 transition-transform duration-500"
         data-aos="zoom-in"
+        data-aos-once="true"
       >
         <FaFacebook />
       </Link>
@@ -19,6 +20,7 @@ const Socials = () => {
         target="_blank"
         className="hover:scale-110 hover:-translate-y-1 hover:brightness-150 transition-transform duration-500"
         data-aos="zoom-in"
+        data-aos-once="true"
         data-aos-delay="200"
       >
         <FaInstagram />
@@ -28,6 +30,7 @@ const Socials = () => {
         target="_blank"
         className="hover:scale-110 hover:-translate-y-1 hover:brightness-150 transition-transform duration-500"
         data-aos="zoom-in"
+        data-aos-once="true"
         data-aos-delay="400"
       >
         <FaXTwitter />

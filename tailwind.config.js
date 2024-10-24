@@ -21,9 +21,9 @@ module.exports = {
         robotoMono: ["Roboto Mono", "monospace"],
       },
       keyframes: {
-        "slide-in-up": {
+        "slide-in-down": {
           "0%": {
-            transform: "translateY(-100%)",
+            transform: "translateY(100%)",
             opacity: "0",
           },
           "100%": {
@@ -44,7 +44,7 @@ module.exports = {
         },
       },
       animation: {
-        slideInUp: "slide-in-up 1s ease-in-out",
+        slideInDown: "slide-in-down 1s ease-in-out",
         rotation: "rotation 1s ease-in-out",
       },
       colors: {

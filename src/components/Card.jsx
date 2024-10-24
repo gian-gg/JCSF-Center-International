@@ -4,7 +4,7 @@ const Card = ({ className, color, backgroundImage, title, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={`h-96 w-4/5 lg:w-64 rounded-3xl ${className} bg-${color} translate-x-0 hover:scale-105 hover:-translate-y-8 transition duration-700 ease-in-out hover:brightness-125`}
+      className={`h-96 w-4/5 lg:w-64 rounded-3xl ${className} bg-${color} translate-x-0 hover:scale-105 hover:-translate-y-8 transition duration-700 ease-in-out hover:brightness-125 animate-slideInDown`}
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",

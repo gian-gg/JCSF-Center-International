@@ -31,7 +31,10 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
 
   return (
     <div className="w-full font-introRust font-semibold text-lavenderBlush">
-      <header className="flex w-full justify-between xl:justify-center xl:items-center text-sm px-4 duration-300">
+      <header
+        className="flex w-full justify-between xl:justify-center xl:items-center text-sm px-4 duration-300"
+        data-aos="fade-down"
+      >
         <div className="flex items-center gap-10">
           <Logo />
           <NavBar
@@ -45,15 +48,12 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
           color="xanthous"
           label="Contact"
           arrow="True"
-          className="hidden xl:flex animate-fadeIn"
+          className="hidden xl:flex"
           onClick={openPopUpPage}
         />
 
         {!showNavBar && (
-          <button
-            className="block xl:hidden text-4xl animate-fadeIn"
-            onClick={toggleNavBar}
-          >
+          <button className="block xl:hidden text-4xl" onClick={toggleNavBar}>
             <LuMenu className="h-12 text-[100%] hover:text-[110%] hover:opacity-60 transition-all duration-500" />
           </button>
         )}
@@ -95,7 +95,7 @@ const Header = ({ togglePopUpPage, setPopUpContent }) => {
             <Link
               to="https://github.com/gian-gg"
               target="_blank"
-              className="underline text-xanthous hover:opacity-60 transition-all duration-500"
+              className="underline text-xanthous hover:opacity-60 transition-all duration-500 animate-pulse"
             >
               gian.gg
             </Link>

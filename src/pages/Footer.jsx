@@ -29,19 +29,29 @@ const Footer = () => {
           <h1 className="font-introRust text-2xl">Contact Us!</h1>
           <hr className="border-lavenderBlush opacity-40 h-2 w-full" />
           <div className="text-xanthous font-georgiaPro">
-            <p>
+            <p data-aos="fade-left" data-aos-once="true">
               <strong className="text-lavenderBlush">Mobile:</strong> (555)
               123-4567
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-once="true" data-aos-delay="200">
               <strong className="text-lavenderBlush">Landline:</strong> (555)
               987-6543
             </p>
-            <p>
+            <p
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-delay="400"
+              data-aos-offset="50"
+            >
               <strong className="text-lavenderBlush">Email:</strong>{" "}
               123456@email.com
             </p>
-            <p>
+            <p
+              data-aos="fade-left"
+              data-aos-once="true"
+              data-aos-delay="600"
+              data-aos-offset="50"
+            >
               <strong className="text-lavenderBlush">Address:</strong> 1234 Elm
               Street, Springfield, IL 62701
             </p>

@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 
 const Logo = () => {
   return (
-    <div className="flex gap-2 animate-slideInUp">
+    <div className="flex gap-2">
       <Link to="/">
         <img
           className="w-20 h-auto hover:scale-[110%] hover:opacity-60 transition-all duration-500"

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -33,7 +32,7 @@ const Socials = () => {
         data-aos-once="true"
         data-aos-delay="400"
       >
-        <FaXTwitter />
+        <FaTelegram />
       </Link>
     </>
   );

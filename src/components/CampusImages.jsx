@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 
@@ -8,65 +9,68 @@ import campus3 from "../assets/images/campus/campus3.jpg";
 import campus4 from "../assets/images/campus/campus4.jpg";
 import campus5 from "../assets/images/campus/campus5.jpg";
 
-const CampusImages = () => {
-  const campusData = [
-    {
-      src: campus1,
-      alt: "image 1",
-    },
-    {
-      src: campus2,
-      alt: "image 2",
-    },
-    {
-      src: campus3,
-      alt: "image 3",
-    },
-    {
-      src: campus4,
-      alt: "image 4",
-    },
-    {
-      src: campus5,
-      alt: "image 5",
-    },
-  ];
+function Arrows({ method, click }) {
+  return (
+    <button
+      className="bg-plum p-2 md:p-4 text-white border border-transparent rounded-full hover:brightness-125 transition-colors opacity-80"
+      onClick={click}
+    >
+      {method === "right" ? <FaChevronLeft /> : <FaChevronRight />}
+    </button>
+  );
+}
 
-  let [currentCampus, setCurrentCampus] = useState(0);
+function Image({ image }) {
+  return <img className="rounded-3xl" src={image} />;
+}
+
+function CampusImages() {
+  const sliderRef = useRef(null);
+
+  const next = () => {
+    sliderRef.current.slickNext(); // Access current property of sliderRef
+  };
+
+  const previous = () => {
+    sliderRef.current.slickPrev(); // Access current property of sliderRef
+  };
+
+  const settings = {
+    arrows: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div
-      className="w-full h-full flex justify-center text-lavenderBlush text-2xl"
+      className="slider-container w-4/5"
       data-aos="zoom-in"
       data-aos-once="true"
     >
-      <div
-        className="w-[1000px] h-[700px] bg-cover bg-center rounded-3xl p-8 flex justify-between items-center"
-        style={{ backgroundImage: `url(${campusData[currentCampus].src})` }}
-      >
-        <button
-          className="bg-plum p-4 text-white border border-transparent rounded-full hover:brightness-125 transition-colors h-14 opacity-80"
-          onClick={() => {
-            if (currentCampus > 0) {
-              setCurrentCampus(currentCampus - 1);
-            }
-          }}
-        >
-          <FaChevronLeft />
-        </button>
-        <button
-          className="bg-plum p-4 border border-transparent rounded-full hover:brightness-125 transition-colors h-14 opacity-80"
-          onClick={() => {
-            if (currentCampus < campusData.length - 1) {
-              setCurrentCampus(currentCampus + 1);
-            }
-          }}
-        >
-          <FaChevronRight />
-        </button>
+      <div className="absolute z-50 w-full h-full flex justify-between items-center px-2 md:px-8">
+        <Arrows method="right" click={previous} />
+        <Arrows method="left" click={next} />
       </div>
+      <Slider ref={sliderRef} {...settings}>
+        <div>
+          <Image image={campus1} />
+        </div>
+        <div>
+          <Image image={campus2} />
+        </div>
+        <div>
+          <Image image={campus3} />
+        </div>
+        <div>
+          <Image image={campus4} />
+        </div>
+        <div>
+          <Image image={campus5} />
+        </div>
+      </Slider>
     </div>
   );
-};
+}
 
 export default CampusImages;

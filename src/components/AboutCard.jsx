@@ -8,8 +8,13 @@ const AboutCard = ({
   delay,
 }) => {
   return (
-    <div data-aos="fade-up" data-aos-delay={delay} data-aos-once="true">
-      <div className="h-96 w-80">
+    <div
+      className="flex justify-center align-middle items-center"
+      data-aos="fade-up"
+      data-aos-delay={delay}
+      data-aos-once="true"
+    >
+      <div className="h-96 w-4/5 lg:w-80">
         <div
           className={`bg-${color} h-full w-full rounded-3xl ${className}`}
           style={{

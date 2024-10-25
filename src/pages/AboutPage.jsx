@@ -73,21 +73,21 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
         </div>
         <div className="flex lg:flex-row flex-col gap-48 lg:gap-20 mt-20">
           <AboutCard
-            delay="300"
+            delay="100"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard3}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
-            delay="500"
+            delay="200"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard4}
             text="Ullamco occaecat sit est amet duis cupidatat pariatur enim aliquip ipsum ipsum. Exercitation adipisicing cillum dolore voluptate. Cillum occaecat duis sunt occaecat eu laborum duis pariatur."
           />
           <AboutCard
-            delay="700"
+            delay="300"
             color="xanthous"
             label="LOREM, IPSUM DOLOR."
             backgroundImage={aboutCard5}
@@ -97,7 +97,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
         <div data-aos="zoom-in" data-aos-once="true">
           <Button
             element="link"
-            to="/"
+            to="https://www.facebook.com/jcsfci"
             color="xanthous"
             label="Facebook"
             arrow="True"

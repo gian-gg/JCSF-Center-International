@@ -6,6 +6,7 @@ const Button = ({ element, to, className, color, label, arrow, onClick }) => {
 
   return (
     <Component
+      target="_blank"
       to={element === "button" ? undefined : to}
       onClick={(e) => {
         // Prevent default action if it's a Link

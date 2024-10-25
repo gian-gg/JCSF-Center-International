@@ -121,7 +121,7 @@ export default function App() {
 
       <Element name="student">
         <div
-          className={`bg-oxfordBlue max-h-[2000px] ${template}`}
+          className={`bg-oxfordBlue min-h-[1000px] ${template}`}
           style={{
             backgroundImage: `url(${bg2})`,
           }}

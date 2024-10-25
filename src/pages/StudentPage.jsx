@@ -39,7 +39,7 @@ const StudentPage = () => {
           <div>
             <img
               src={chalk4}
-              className="h-28 md:h-32 lg:h-48 absolute z-20 right-96 top-24 lg:right-[680px] lg:top-10 -rotate-[16deg]"
+              className="h-28 md:h-32 lg:h-48 absolute z-20 right-96 top-24 md:right-[600px] md:top-16 lg:right-[680px] lg:top-10 -rotate-[16deg]"
               data-aos="fade-in"
               data-aos-once="true"
             />
@@ -57,7 +57,7 @@ const StudentPage = () => {
           <div>
             <img
               src={chalk3}
-              className="h-28 md:h-32 lg:h-48 absolute right-28 -top-4 md:right-20 lg:right-44 rotate-12 z-20"
+              className="h-28 md:h-32 lg:h-48 absolute right-28 -top-4 md:right-44 rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
             />
@@ -90,7 +90,7 @@ const StudentPage = () => {
           <div>
             <img
               src={chalk6}
-              className="h-28 md:h-32 lg:h-48 absolute right-48 md:right-56 lg:right-96 -top-56 rotate-12 z-20"
+              className="h-28 md:h-32 lg:h-48 absolute right-48 md:right-96 lg:right-96 -top-56 rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
             />
@@ -108,7 +108,7 @@ const StudentPage = () => {
           <div>
             <img
               src={chalk7}
-              className="h-16 lg:h-36 absolute left-36 top-24 lg:left-56 lg:top-56 -rotate-12 z-20"
+              className="h-16 md:h-24 lg:h-36 absolute left-36 top-24 md:top-56 lg:left-56 lg:top-56 -rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
             />

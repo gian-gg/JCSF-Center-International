@@ -45,7 +45,7 @@ module.exports = {
       },
       animation: {
         slideInDown: "slide-in-down 1s ease-in-out",
-        rotation: "rotation 1s ease-in-out",
+        rotation: "rotation 1s ease-in-out forwards",
       },
       colors: {
         plum: "#984C84",

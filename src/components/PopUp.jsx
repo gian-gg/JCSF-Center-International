@@ -15,7 +15,7 @@ const ContactsPage = ({ isOpen, setIsOpen, Content, bg }) => {
       )}
 
       <div
-        className="h-3/5 w-4/5 lg:max-h-[510px] lg:max-w-[910px] bg-white relative z-50 rounded-3xl animate-slideInDown flex flex-col justify-between"
+        className="max-h-[500px] h-3/5 w-4/5 lg:max-h-[510px] lg:max-w-[910px] bg-white relative z-50 rounded-3xl animate-slideInDown flex flex-col justify-between"
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",

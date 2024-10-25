@@ -11,8 +11,8 @@ const PhotoCard = ({
   // Define the size classes based on orientation
   const sizeClasses =
     orientation === "landscape"
-      ? "h-[200px] w-[300px] lg:h-[350px] lg:w-[500px]"
-      : "h-[300px] w-[200px] lg:h-[500px] lg:w-[350px]";
+      ? "h-[200px] w-[300px] lg:h-[350px] lg:w-[500px] md:h-[300px] md:w-[450px]"
+      : "h-[300px] w-[200px] lg:h-[500px] lg:w-[350px] md:h-[450px] md:w-[300px]";
 
   return (
     <div

@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        admissionLG: "1350px",
+        admissionLG: "1450px",
       },
       fontFamily: {
         eksellDisplay: ["Eksell Display", "sans-serif"],

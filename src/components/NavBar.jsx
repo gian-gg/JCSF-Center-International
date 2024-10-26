@@ -7,7 +7,7 @@ const NavBarItem = ({ to, title, isBordered }) => {
       <hr className={hrStyle} />
       <Link to={to}>
         <p
-          className={`h-8 text-center hover:border-b-0 border-xanthous ${isBordered === "nav" ? "xl:hover:border-b-4" : "xl:hover:border-b-0"}`}
+          className={` whitespace-nowrap h-8 text-center hover:border-b-0 border-xanthous ${isBordered === "nav" ? "xl:hover:border-b-4" : "xl:hover:border-b-0"}`}
         >
           {title}
         </p>

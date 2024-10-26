@@ -1,9 +1,29 @@
+import { Link } from "react-router-dom";
+
 import TableAdmission from "../components/TableAdmission";
 import Button from "../components/Button";
 import Card from "../components/Card";
 
-import aboutCard1 from "../assets/images/about/about1.png";
-import aboutCard2 from "../assets/images/about/about2.png";
+import image1 from "../assets/images/admission/image1.jpg";
+import image2 from "../assets/images/admission/image2.jpg";
+
+const ImageCards = ({ to, image }) => {
+  return (
+    <Link
+      to={to}
+      target="_blank"
+      className="hover:scale-105 hover:-translate-y-8 transition duration-700 ease-in-out hover:brightness-125"
+    >
+      <img
+        src={image}
+        alt=""
+        className="w-80 rounded-xl"
+        data-aos="fade-up"
+        data-aos-once="true"
+      />
+    </Link>
+  );
+};
 
 const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
   const openPopUpPage = () => {
@@ -15,7 +35,7 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
       {/* Main Content */}
       <div className="flex-1">
         {/* Title and Subtitle */}
-        <div className="flex flex-col admissionLG:flex-row gap-4">
+        <div className="flex flex-col admissionLG:flex-row gap-4 xl:gap-12">
           <div
             className="text-center admissionLG:text-left"
             data-aos="fade-left"
@@ -33,53 +53,65 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
           </div>
           {/* Cards Section */}
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center admissionLG:translate-y-[-80px] mt-12 md:mt-0">
-            <Card
-              color="plum"
-              backgroundImage={aboutCard1}
-              title="TITLE 1"
-              togglePopUpPage={togglePopUpPage}
-              onClick={() => {
-                setPopUpContent("admission1");
-                openPopUpPage();
-              }}
+            <ImageCards
+              to="https://www.facebook.com/share/p/yi7NS6NRTTE4oKRM/"
+              image={image1}
             />
-            <Card
-              color="xanthous"
-              backgroundImage={aboutCard2}
-              title="TITLE 2"
-              togglePopUpPage={togglePopUpPage}
-              onClick={() => {
-                setPopUpContent("admission2");
-                openPopUpPage();
-              }}
+            <ImageCards
+              to="https://www.facebook.com/share/p/J5gADLUP8fTvF84g/"
+              image={image2}
             />
           </div>
         </div>
 
         {/* Table Section */}
-        <div className="mt-12">
+        <div className="mt-12 flex flex-col justify-center items-center">
           <TableAdmission
             num="01"
-            step="STEP"
-            text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
+            step="Inquiry Submission"
+            text="Parents interested in enrolling their child can submit an inquiry by contacting the admissions office directly for initial information."
           />
           <TableAdmission
             delay="200"
             num="02"
-            step="STEP STEP"
-            text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
+            step="School Tour"
+            text="Schedule a visit to the school for a guided tour where prospective families can meet the staff, explore the facilities, and gain insights into the curriculum and ethos."
           />
           <TableAdmission
             delay="400"
             num="03"
-            step="STEP STEP STEP"
-            text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
+            step="Application Form Completion"
+            text="Fill out the admissions application form, providing necessary details about the child, previous educational experience, and family information."
           />
           <TableAdmission
             delay="600"
             num="04"
-            step="STEP STEP STEP STEP"
-            text="nulla dolor veniam ut fugiat id labore magna in excepteur consequat proident cillum quis ea voluptate labore aliqua dolor ut"
+            step="Document Submission"
+            text="Submit required documents, including the child's birth certificate, health records, and any previous school reports, to the admissions office."
+          />
+          <TableAdmission
+            delay="600"
+            num="05"
+            step="Parent Interview"
+            text="Attend a meeting with the admissions team to discuss the child’s needs, educational philosophy, and any questions about the school."
+          />
+          <TableAdmission
+            delay="600"
+            num="06"
+            step="Assessment Session"
+            text="If applicable, schedule an assessment or play session for the child to ensure a good fit with the school's environment and curriculum."
+          />
+          <TableAdmission
+            delay="600"
+            num="07"
+            step="Admission Decision"
+            text="Upon completion of the previous steps, await notification regarding the child's admission status, typically communicated via email or phone."
+          />
+          <TableAdmission
+            delay="600"
+            num="08"
+            step="Enrollment Confirmation"
+            text="Once accepted, complete the enrollment form and provide a non-refundable deposit to secure a place for your child."
           />
         </div>
 
@@ -88,11 +120,7 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
           className="mt-12 flex flex-col md:flex-row justify-center gap-8 items-center"
           data-aos="zoom-in"
           data-aos-once="true"
-        >
-          <Button element="button" color="plum" label="Button 1" />
-          <Button element="button" color="xanthous" label="Button 2" />
-          <Button element="button" color="oxfordBlue" label="Button 3" />
-        </div>
+        ></div>
       </div>
       <div
         className="mt-20 text-center font-introRust flex flex-col items-center animate-pulse"

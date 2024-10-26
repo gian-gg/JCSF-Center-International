@@ -1,7 +1,7 @@
 import { Button, Link } from "react-scroll";
 
-import image1 from "../assets/images/students/image3.jpg";
-import image2 from "../assets/images/students/image5.jpg";
+import image1 from "../assets/images/landing/image1.jpg";
+import image2 from "../assets/images/landing/image2.jpg";
 
 import chalk1 from "../assets/images/chalkOverlay/chalk1.png";
 import chalk2 from "../assets/images/chalkOverlay/chalk2.png";
@@ -10,7 +10,7 @@ const Buttons = ({ to, color, textColor, label }) => {
   return (
     <Link
       to={to}
-      className={`bg-${color} text-${textColor} rounded-full py-2 px-4 hover:opacity-50 cursor-pointer hover:scale-105 hover:-translate-y-1 transition duration-1000 ease-in-out `}
+      className={`bg-${color} text-${textColor} rounded-full py-2 px-4 hover:opacity-50 cursor-pointer hover:scale-105 hover:-translate-y-1 transition duration-1000 ease-in-out whitespace-nowrap`}
     >
       {label}
     </Link>
@@ -63,12 +63,12 @@ const LandingPage = () => {
           >
             <div className="bg-white h-vh w-14 opacity-50 rounded"></div>
             <div className="">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-eksellDisplay italic">
-                "Do minim do velit pariatur nulla reprehenderit esse excepteur
-                sunt ipsum."
+              <h1 className="text-4xl sm:text-5xl xl:text-6xl font-eksellDisplay italic">
+                “Educating the mind without educating the heart is no education
+                at all."
               </h1>
-              <p className="flex justify-end pt-8 pr-12 lg:pr-32 font-georgiaPro opacity-80 animate-pulse">
-                ~ laborum enim'
+              <p className="flex justify-end pr-12 lg:pr-32 font-georgiaPro opacity-80 animate-pulse">
+                ~ Aristotle
               </p>
             </div>
           </div>

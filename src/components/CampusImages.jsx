@@ -8,6 +8,10 @@ import campus2 from "../assets/images/campus/campus2.jpg";
 import campus3 from "../assets/images/campus/campus3.jpg";
 import campus4 from "../assets/images/campus/campus4.jpg";
 import campus5 from "../assets/images/campus/campus5.jpg";
+import campus6 from "../assets/images/campus/campus6.jpg";
+import campus7 from "../assets/images/campus/campus7.jpg";
+import campus8 from "../assets/images/campus/campus8.jpg";
+import campus9 from "../assets/images/campus/campus9.jpg";
 
 function Arrows({ method, click }) {
   return (
@@ -68,6 +72,18 @@ function CampusImages() {
         </div>
         <div>
           <Image image={campus5} />
+        </div>
+        <div>
+          <Image image={campus6} />
+        </div>
+        <div>
+          <Image image={campus7} />
+        </div>
+        <div>
+          <Image image={campus8} />
+        </div>
+        <div>
+          <Image image={campus9} />
         </div>
       </Slider>
     </div>

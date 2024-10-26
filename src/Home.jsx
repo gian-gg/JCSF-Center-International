@@ -12,11 +12,6 @@ import ContactsPage from "./pages/ContactsPage";
 
 import PopUp from "./components/PopUp";
 
-import About1 from "./pages/aboutPages/AboutPage1";
-import About2 from "./pages/aboutPages/AboutPage2";
-import Admission1 from "./pages/admissionPages/AdmissionPage1";
-import Admission2 from "./pages/admissionPages/AdmissionPage2";
-
 import Header from "./pages/Header";
 
 import bg1 from "./assets/images/bg/bg1.png";
@@ -61,15 +56,8 @@ export default function App() {
   const getPopUpContent = () => {
     if (popUpContent === "contacts") {
       return ContactsPage;
-    } else if (popUpContent === "about1") {
-      return About1;
-    } else if (popUpContent === "about2") {
-      return About2;
-    } else if (popUpContent === "admission1") {
-      return Admission1;
-    } else if (popUpContent === "admission2") {
-      return Admission2;
     }
+
     return null; // return null if no condition matches
   };
 
@@ -121,7 +109,7 @@ export default function App() {
 
       <Element name="student">
         <div
-          className={`bg-oxfordBlue min-h-[1000px] ${template}`}
+          className={`bg-oxfordBlue max-h-[2100px] ${template}`}
           style={{
             backgroundImage: `url(${bg2})`,
           }}
@@ -144,7 +132,7 @@ export default function App() {
         style={{
           backgroundImage: `url(${bg1})`,
           backgroundSize: "cover",
-          backgroundPosition: "bottom right",
+          backgroundPosition: "center",
         }}
       >
         <FooterPage />

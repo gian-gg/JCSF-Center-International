@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import Contacts from "../components/Contacts";
 
-import arrow from "../assets/images/arrow.png";
+const Contact = ({ delay, label, text }) => {
+  return (
+    <p data-aos="fade-right" data-aos-delay={delay}>
+      <strong className="text-black">{label}:</strong> {text}
+    </p>
+  );
+};
 
 const ContactsPage = () => {
   return (
@@ -16,23 +22,18 @@ const ContactsPage = () => {
         Get in Touch <span className="font-colonna">!</span>
       </h2>
 
-      <div className="text-plum font-georgiaPro md:text-2xl pt-8 flex flex-col lg:flex-row justify-between gap-4">
-        <div className="left flex flex-col gap-4">
-          <p data-aos="fade-right" data-aos-delay="800">
-            <strong className="text-black">Mobile:</strong> (555) 123-4567
-          </p>
-          <p data-aos="fade-right" data-aos-delay="1000">
-            <strong className="text-black">Landline:</strong> (555) 987-6543
-          </p>
+      <div className="text-plum font-georgiaPro md:text-2xl pt-8 flex flex-col md:flex-row justify-between gap-4">
+        <div className="left flex flex-col gap-4 md:w-1/2">
+          <Contacts colorLabel="black" colorText="plum" />
         </div>
-        <div className="right flex flex-col gap-4">
-          <p data-aos="fade-right" data-aos-delay="1200">
-            <strong className="text-black">Email:</strong> 123456@email.com
-          </p>
-          <p data-aos="fade-right" data-aos-delay="1400">
-            <strong className="text-black">Address:</strong> 1234 Elm Street,
-            Springfield, IL 62701
-          </p>
+        <div className="right flex flex-col gap-4 md:w-1/2">
+          <Contact
+            delay="1400"
+            label="School Address"
+            text="#104 Beo.
+            st. 13BT, Phum Sansamkosal, Sangkat Boeng Tumpon, Khan Mean Chey,
+            Phnom Phenh, Cambodia"
+          />
         </div>
       </div>
     </div>

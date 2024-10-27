@@ -5,7 +5,7 @@ import Contacts from "../components/Contacts";
 
 const Footer = () => {
   return (
-    <div className="text-white mb-8 w-4/5">
+    <div className="text-white mb-8 w-4/5 max-w-[1000px]">
       <div className="w-full mt-20 flex flex-col md:flex-row justify-between">
         <div className="flex lg:w-[50%] flex-col md:flex-row md:gap-12">
           <div className="md:w-[50%] lg:w-[60%] flex flex-col justify-center align-middle items-center gap-4">

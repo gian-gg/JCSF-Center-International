@@ -8,8 +8,8 @@ import aboutCard1 from "../assets/images/about/about1.png";
 import aboutCard2 from "../assets/images/about/about2.png";
 
 import aboutCard3 from "../assets/images/about/aboutCard1.jpg";
-// import aboutCard4 from "../assets/images/about/aboutCard2.jpg";
-// import aboutCard5 from "../assets/images/about/aboutCard3.jpg";
+import aboutCard5 from "../assets/images/about/aboutCard2.jpg";
+import aboutCard4 from "../assets/images/about/aboutCard3.jpg";
 
 const AboutCard = ({
   url,
@@ -78,10 +78,10 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           />
         </div>
       </div>
-      <div className="mt-20 text-center font-introRust flex flex-col items-center">
+      <div className="mt-20 text-center font-introRust flex flex-col items-center ">
         <h1
-          className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum"
-          data-aos="fade-right"
+          className="text-5xl sm:text-7xl lg:text-7xl font-extrabold text-plum animate-pulse"
+          data-aos="flip-right"
           data-aos-once="true"
         >
           JCSF CENTER INTERNATIONAL
@@ -122,12 +122,14 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
             delay="200"
             color="xanthous"
             label="Innovative Learning Environments"
+            backgroundImage={aboutCard5}
             text="Classrooms designed to inspire creativity, equipped with interactive tools and resources to enhance learning experiences."
           />
           <AboutCard
             delay="300"
             color="xanthous"
             label="Experienced Educators"
+            backgroundImage={aboutCard4}
             text="A team of qualified and passionate teachers committed to providing personalized attention and support to every child."
           />
         </div>

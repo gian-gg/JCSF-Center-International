@@ -13,7 +13,7 @@ import chalk4 from "../assets/images/chalkOverlay/chalk4.png";
 import chalk5 from "../assets/images/chalkOverlay/chalk5.png";
 import chalk6 from "../assets/images/chalkOverlay/chalk6.png";
 import chalk7 from "../assets/images/chalkOverlay/chalk7.png";
-import chalk8 from "../assets/images/chalkOverlay/chalk5.png";
+import chalk8 from "../assets/images/chalkOverlay/chalk8.png";
 
 const StudentPage = () => {
   return (

@@ -49,7 +49,7 @@ function CampusImages() {
 
   return (
     <div
-      className="slider-container w-4/5"
+      className="slider-container w-4/5 max-w-[1280px]"
       data-aos="zoom-in"
       data-aos-once="true"
     >

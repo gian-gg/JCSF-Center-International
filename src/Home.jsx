@@ -19,7 +19,7 @@ import bg2 from "./assets/images/bg/bg2.png";
 import bg3 from "./assets/images/bg/bg3.png";
 
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 
 export default function App() {
   useEffect(() => {
@@ -109,7 +109,7 @@ export default function App() {
 
       <Element name="student">
         <div
-          className={`bg-oxfordBlue max-h-[2100px] ${template}`}
+          className={`bg-oxfordBlue min-h-[1000px] ${template}`}
           style={{
             backgroundImage: `url(${bg2})`,
           }}

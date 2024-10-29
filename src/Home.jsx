@@ -138,11 +138,11 @@ export default function App() {
         <FooterPage />
       </div>
 
-      <div className="bg-plum font-robotoMono w-full text-white font-bold text-[8px] md:text-sm flex flex-col justify-center align-middle items-center pb-2">
+      <div className="bg-plum font-robotoMono w-full text-white font-bold text-[8px] md:text-sm flex flex-col justify-center align-middle items-center pb-2 px-2">
         <hr className="border-lavenderBlush opacity-40 h-2 w-4/5" />
         <p>
           © 2024, JCSF Center International | All Rights Reserved | Designed
-          by:{" "}
+          and Built by:{" "}
           <Link
             to="https://github.com/gian-gg"
             target="_blank"

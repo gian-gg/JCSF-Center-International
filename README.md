@@ -11,7 +11,7 @@ This commissioned project was completed from the design phase through coding and
 
 ## Tech Stack
 
-[![TECH](https://skillicons.dev/icons?i=react,vite,tailwind,netlify)](https://skillicons.dev)
+[![TECH](https://skillicons.dev/icons?i=react,nodejs,vite,tailwind,netlify)](https://skillicons.dev)
 
 Libraries:
 

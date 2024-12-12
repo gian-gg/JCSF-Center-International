@@ -11,7 +11,7 @@ const ImageCards = ({ to, image }) => {
     >
       <img
         src={image}
-        alt=""
+        alt="IMAGE CARD"
         className="w-80 rounded-xl"
         data-aos="fade-up"
         data-aos-once="true"

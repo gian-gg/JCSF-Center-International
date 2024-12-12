@@ -15,7 +15,7 @@ function Arrows({ method, click }) {
 }
 
 function Image({ image }) {
-  return <img className="rounded-3xl" src={image} />;
+  return <img className="rounded-3xl" src={image} alt="campus image" />;
 }
 
 function CampusImages() {

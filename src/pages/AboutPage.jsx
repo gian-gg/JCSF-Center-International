@@ -85,7 +85,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           A Kindergarten in Phnom Penh, Cambodia.
         </h2>
         <div className="flex lg:flex-row flex-col justify-center w-[80%] max-w-[1000px] gap-4 lg:gap-10 items-center mt-4">
-          <img src="./logo.png" alt="JCFSCI Logo" className="w-64 md:w-80" />
+          <img src="/logo.png" alt="JCFSCI Logo" className="w-64 md:w-80" />
           <p className="font-georgiaPro text-justify text-xl indent-8">
             JCSF Center International Kindergarten School in Phnom Penh,
             Cambodia, is a vibrant and nurturing learning environment designed

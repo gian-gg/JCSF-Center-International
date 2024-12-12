@@ -6,7 +6,7 @@ const Logo = () => {
       <Link to="home">
         <img
           className="w-20 h-auto hover:scale-[110%] hover:opacity-60 transition-all duration-500 cursor-pointer"
-          src="./logo.png"
+          src="/logo.png"
           alt="logo"
         />
       </Link>

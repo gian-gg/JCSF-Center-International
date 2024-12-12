@@ -48,7 +48,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           <Card
             color="xanthous"
             arrow={false}
-            backgroundImage="./images/about/about1.png"
+            backgroundImage="/images/about/about1.png"
             title="Curious Minds"
             togglePopUpPage={togglePopUpPage}
             onClick={() => {
@@ -59,7 +59,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           <Card
             color="oxfordBlue"
             arrow={false}
-            backgroundImage="./images/about/about2.png"
+            backgroundImage="/images/about/about2.png"
             title="Joyful Explorers"
             togglePopUpPage={togglePopUpPage}
             onClick={() => {
@@ -106,21 +106,21 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
             delay="100"
             color="xanthous"
             label="Holistic Curriculum"
-            backgroundImage="./images/about/aboutCard1.jpg"
+            backgroundImage="/images/about/aboutCard1.jpg"
             text="A well-rounded program that integrates academics, arts, and physical education, fostering all aspects of child development."
           />
           <AboutCard
             delay="200"
             color="xanthous"
             label="Innovative Learning Environments"
-            backgroundImage="./images/about/aboutCard2.jpg"
+            backgroundImage="/images/about/aboutCard2.jpg"
             text="Classrooms designed to inspire creativity, equipped with interactive tools and resources to enhance learning experiences."
           />
           <AboutCard
             delay="300"
             color="xanthous"
             label="Experienced Educators"
-            backgroundImage="./images/about/aboutCard3.jpg"
+            backgroundImage="/images/about/aboutCard3.jpg"
             text="A team of qualified and passionate teachers committed to providing personalized attention and support to every child."
           />
         </div>

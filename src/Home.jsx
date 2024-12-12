@@ -77,7 +77,7 @@ export default function App() {
           isOpen={isPopUpOpen}
           setIsOpen={togglePopUpPage}
           Content={getPopUpContent()}
-          bg="./images/bg/bg3.png"
+          bg="/images/bg/bg3.png"
         />
       </div>
 
@@ -85,7 +85,7 @@ export default function App() {
         <div
           className={`bg-plum bg-cover min-h-[800px] ${template}`}
           style={{
-            backgroundImage: `url("./images/bg/bg1.png")`,
+            backgroundImage: `url("/images/bg/bg1.png")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -107,7 +107,7 @@ export default function App() {
         <div
           className={`bg-oxfordBlue min-h-[1000px] ${template}`}
           style={{
-            backgroundImage: `url("./images/bg/bg2.png")`,
+            backgroundImage: `url("/images/bg/bg2.png")`,
           }}
         >
           <StudentPage />
@@ -126,7 +126,7 @@ export default function App() {
       <div
         className={`bg-plum min-h-[350px] flex justify-center ${template}`}
         style={{
-          backgroundImage: `url("./images/bg/bg1.png")`,
+          backgroundImage: `url("/images/bg/bg1.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -49,31 +49,31 @@ function CampusImages() {
       </div>
       <Slider ref={sliderRef} {...settings}>
         <div>
-          <Image image="./images/campus/campus1.jpg" />
+          <Image image="/images/campus/campus1.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus2.jpg" />
+          <Image image="/images/campus/campus2.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus3.jpg" />
+          <Image image="/images/campus/campus3.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus4.jpg" />
+          <Image image="/images/campus/campus4.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus5.jpg" />
+          <Image image="/images/campus/campus5.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus6.jpg" />
+          <Image image="/images/campus/campus6.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus7.jpg" />
+          <Image image="/images/campus/campus7.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus8.jpg" />
+          <Image image="/images/campus/campus8.jpg" />
         </div>
         <div>
-          <Image image="./images/campus/campus9.jpg" />
+          <Image image="/images/campus/campus9.jpg" />
         </div>
       </Slider>
     </div>

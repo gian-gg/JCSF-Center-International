@@ -90,8 +90,8 @@ const LandingPage = () => {
       <div className="flex md:hidden lg:flex ml-10 mt-20 md:mt-20 mb-36 justify-center">
         <PhotoCard
           dimensions="min-w-[200px] h-[300px] md:w-[300px] md:h-[400px]"
-          image="./images/landing/image1.jpg"
-          chalk="./images/chalkOverlay/chalk1.png"
+          image="/images/landing/image1.jpg"
+          chalk="/images/chalkOverlay/chalk1.png"
           chalkClass="h-40 absolute -right-28 -top-4 z-20"
           rotation="-12deg"
           x="0"
@@ -99,8 +99,8 @@ const LandingPage = () => {
         />
         <PhotoCard
           dimensions="min-w-[150px] h-[200px] md:h-[250px] md:w-[200px]"
-          image="./images/landing/image2.jpg"
-          chalk="./images/chalkOverlay/chalk2.png"
+          image="/images/landing/image2.jpg"
+          chalk="/images/chalkOverlay/chalk2.png"
           chalkClass="h-40 absolute right-28 top-48 z-20"
           rotation="12deg"
           x="-40px"

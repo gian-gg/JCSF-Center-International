@@ -1,13 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Router from "./Router.jsx";
 import "./assets/index.css";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Home from "./Home";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router />
+    <Router>
+      <div>
+        <Routes>
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
   </React.StrictMode>
 );

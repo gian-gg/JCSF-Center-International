@@ -14,10 +14,6 @@ import PopUp from "./components/PopUp";
 
 import Header from "./pages/Header";
 
-import bg1 from "./assets/images/bg/bg1.png";
-import bg2 from "./assets/images/bg/bg2.png";
-import bg3 from "./assets/images/bg/bg3.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -81,7 +77,7 @@ export default function App() {
           isOpen={isPopUpOpen}
           setIsOpen={togglePopUpPage}
           Content={getPopUpContent()}
-          bg={bg3}
+          bg="./images/bg/bg3.png"
         />
       </div>
 
@@ -89,7 +85,7 @@ export default function App() {
         <div
           className={`bg-plum bg-cover min-h-[800px] ${template}`}
           style={{
-            backgroundImage: `url(${bg1})`,
+            backgroundImage: `url("./images/bg/bg1.png")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -111,7 +107,7 @@ export default function App() {
         <div
           className={`bg-oxfordBlue min-h-[1000px] ${template}`}
           style={{
-            backgroundImage: `url(${bg2})`,
+            backgroundImage: `url("./images/bg/bg2.png")`,
           }}
         >
           <StudentPage />
@@ -130,7 +126,7 @@ export default function App() {
       <div
         className={`bg-plum min-h-[350px] flex justify-center ${template}`}
         style={{
-          backgroundImage: `url(${bg1})`,
+          backgroundImage: `url("./images/bg/bg1.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

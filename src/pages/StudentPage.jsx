@@ -1,20 +1,6 @@
 import CampusImages from "../components/CampusImages";
 import PhotoCard from "../components/PhotoCard";
 
-import image1 from "../assets/images/students/image1.jpg";
-import image2 from "../assets/images/students/image2.jpg";
-import image3 from "../assets/images/students/image3.jpg";
-import image4 from "../assets/images/students/image4.jpg";
-import image5 from "../assets/images/students/image5.jpg";
-import image6 from "../assets/images/students/image6.jpg";
-
-import chalk3 from "../assets/images/chalkOverlay/chalk3.png";
-import chalk4 from "../assets/images/chalkOverlay/chalk4.png";
-import chalk5 from "../assets/images/chalkOverlay/chalk5.png";
-import chalk6 from "../assets/images/chalkOverlay/chalk6.png";
-import chalk7 from "../assets/images/chalkOverlay/chalk7.png";
-import chalk8 from "../assets/images/chalkOverlay/chalk8.png";
-
 const StudentPage = () => {
   return (
     <div className="w-full h-full translate-y-[-50px] lg:translate-y-[-300px] flex flex-col justify-center items-center align-middle text-lavenderBlush">
@@ -38,7 +24,7 @@ const StudentPage = () => {
         <div className="flex mt-12 -translate-x-12">
           <div>
             <img
-              src={chalk4}
+              src="./images/chalkOverlay/chalk4.png"
               className="h-28 md:h-32 lg:h-48 absolute z-20 right-96 top-24 md:right-[600px] md:top-16 lg:right-[680px] lg:top-10 -rotate-[16deg]"
               data-aos="fade-in"
               data-aos-once="true"
@@ -51,12 +37,12 @@ const StudentPage = () => {
               lgy="translate-x-16"
               rotation="-rotate-12"
               color="xanthous"
-              backgroundImage={image1}
+              backgroundImage="./images/students/image1.jpg"
             />
           </div>
           <div>
             <img
-              src={chalk3}
+              src="./images/chalkOverlay/chalk3.png"
               className="h-28 md:h-32 lg:h-48 absolute right-28 -top-4 md:right-44 rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
@@ -65,12 +51,12 @@ const StudentPage = () => {
             <PhotoCard
               orientation="landscape"
               color="oxfordBlue"
-              backgroundImage={image2}
+              backgroundImage="./images/students/image2.jpg"
             />
           </div>
           <div>
             <img
-              src={chalk5}
+              src="./images/chalkOverlay/chalk5.png"
               className="h-28 md:h-32 lg:h-48 absolute right-48 top-40 z-20"
               data-aos="fade-in"
               data-aos-once="true"
@@ -82,14 +68,14 @@ const StudentPage = () => {
               lgy="translate-y-20"
               rotation="rotate-[20deg]"
               color="plum"
-              backgroundImage={image3}
+              backgroundImage="./images/students/image3.jpg"
             />
           </div>
         </div>
         <div className="flex mt-48 lg:mt-0 translate-x-1">
           <div>
             <img
-              src={chalk6}
+              src="./images/chalkOverlay/chalk6.png"
               className="h-28 md:h-32 lg:h-48 absolute right-48 md:right-96 lg:right-96 -top-56 rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
@@ -101,13 +87,13 @@ const StudentPage = () => {
               lgy="-translate-y-20"
               rotation="-rotate-2"
               color="plum"
-              backgroundImage={image4}
+              backgroundImage="./images/students/image4.jpg"
             />
           </div>
 
           <div>
             <img
-              src={chalk7}
+              src="./images/chalkOverlay/chalk7.png"
               className="h-16 md:h-24 lg:h-36 absolute left-36 top-24 md:top-56 lg:left-56 lg:top-56 -rotate-12 z-20"
               data-aos="fade-in"
               data-aos-once="true"
@@ -118,13 +104,13 @@ const StudentPage = () => {
               lgy="-translate-y-20"
               rotation="rotate-2"
               color="xanthous"
-              backgroundImage={image5}
+              backgroundImage="./images/students/image5.jpg"
             />
           </div>
         </div>
         <div className="translate-x-1">
           <img
-            src={chalk8}
+            src="./images/chalkOverlay/chalk8.png"
             className="h-28 md:h-32 lg:h-48 absolute -right-16 lg:-right-24 -top-48 rotate-[40deg] z-20"
             data-aos="fade-in"
             data-aos-once="true"
@@ -136,7 +122,7 @@ const StudentPage = () => {
             lgy="-translate-y-80"
             rotation="-rotate-12"
             color="oxfordBlue"
-            backgroundImage={image6}
+            backgroundImage="./images/students/image6.jpg"
           />
         </div>
       </div>

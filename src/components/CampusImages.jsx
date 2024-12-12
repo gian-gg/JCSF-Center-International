@@ -3,16 +3,6 @@ import Slider from "react-slick";
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 
-import campus1 from "../assets/images/campus/campus1.jpg";
-import campus2 from "../assets/images/campus/campus2.jpg";
-import campus3 from "../assets/images/campus/campus3.jpg";
-import campus4 from "../assets/images/campus/campus4.jpg";
-import campus5 from "../assets/images/campus/campus5.jpg";
-import campus6 from "../assets/images/campus/campus6.jpg";
-import campus7 from "../assets/images/campus/campus7.jpg";
-import campus8 from "../assets/images/campus/campus8.jpg";
-import campus9 from "../assets/images/campus/campus9.jpg";
-
 function Arrows({ method, click }) {
   return (
     <button
@@ -59,31 +49,31 @@ function CampusImages() {
       </div>
       <Slider ref={sliderRef} {...settings}>
         <div>
-          <Image image={campus1} />
+          <Image image="./images/campus/campus1.jpg" />
         </div>
         <div>
-          <Image image={campus2} />
+          <Image image="./images/campus/campus2.jpg" />
         </div>
         <div>
-          <Image image={campus3} />
+          <Image image="./images/campus/campus3.jpg" />
         </div>
         <div>
-          <Image image={campus4} />
+          <Image image="./images/campus/campus4.jpg" />
         </div>
         <div>
-          <Image image={campus5} />
+          <Image image="./images/campus/campus5.jpg" />
         </div>
         <div>
-          <Image image={campus6} />
+          <Image image="./images/campus/campus6.jpg" />
         </div>
         <div>
-          <Image image={campus7} />
+          <Image image="./images/campus/campus7.jpg" />
         </div>
         <div>
-          <Image image={campus8} />
+          <Image image="./images/campus/campus8.jpg" />
         </div>
         <div>
-          <Image image={campus9} />
+          <Image image="./images/campus/campus9.jpg" />
         </div>
       </Slider>
     </div>

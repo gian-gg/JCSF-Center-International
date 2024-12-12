@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 
 import TableAdmission from "../components/TableAdmission";
-import Button from "../components/Button";
-import Card from "../components/Card";
-
-import image1 from "../assets/images/admission/image1.jpg";
-import image2 from "../assets/images/admission/image2.jpg";
 
 const ImageCards = ({ to, image }) => {
   return (
@@ -55,11 +50,11 @@ const AdmissionPage = ({ togglePopUpPage, setPopUpContent }) => {
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center admissionLG:translate-y-[-80px] mt-12 md:mt-0">
             <ImageCards
               to="https://www.facebook.com/share/p/yi7NS6NRTTE4oKRM/"
-              image={image1}
+              image="./images/admission/image1.jpg"
             />
             <ImageCards
               to="https://www.facebook.com/share/p/J5gADLUP8fTvF84g/"
-              image={image2}
+              image="./images/admission/image2.jpg"
             />
           </div>
         </div>

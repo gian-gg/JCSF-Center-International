@@ -1,15 +1,6 @@
-import logo from "../assets/images/logo.png";
-
 import Card from "../components/Card";
 
 import Button from "../components/Button";
-
-import aboutCard1 from "../assets/images/about/about1.png";
-import aboutCard2 from "../assets/images/about/about2.png";
-
-import aboutCard3 from "../assets/images/about/aboutCard1.jpg";
-import aboutCard5 from "../assets/images/about/aboutCard2.jpg";
-import aboutCard4 from "../assets/images/about/aboutCard3.jpg";
 
 const AboutCard = ({
   url,
@@ -31,7 +22,7 @@ const AboutCard = ({
         <div
           className={`bg-${color} h-full w-full rounded-3xl ${className}`}
           style={{
-            backgroundImage: `url(${backgroundImage})`,
+            backgroundImage: `url("${backgroundImage}")`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -57,7 +48,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           <Card
             color="xanthous"
             arrow={false}
-            backgroundImage={aboutCard1}
+            backgroundImage="./images/about/about1.png"
             title="Curious Minds"
             togglePopUpPage={togglePopUpPage}
             onClick={() => {
@@ -68,7 +59,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           <Card
             color="oxfordBlue"
             arrow={false}
-            backgroundImage={aboutCard2}
+            backgroundImage="./images/about/about2.png"
             title="Joyful Explorers"
             togglePopUpPage={togglePopUpPage}
             onClick={() => {
@@ -94,7 +85,7 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
           A Kindergarten in Phnom Penh, Cambodia.
         </h2>
         <div className="flex lg:flex-row flex-col justify-center w-[80%] max-w-[1000px] gap-4 lg:gap-10 items-center mt-4">
-          <img src={logo} alt="" className="w-64 md:w-80" />
+          <img src="./logo.png" alt="" className="w-64 md:w-80" />
           <p className="font-georgiaPro text-justify text-xl indent-8">
             JCSF Center International Kindergarten School in Phnom Penh,
             Cambodia, is a vibrant and nurturing learning environment designed
@@ -115,21 +106,21 @@ const AboutPage = ({ togglePopUpPage, setPopUpContent }) => {
             delay="100"
             color="xanthous"
             label="Holistic Curriculum"
-            backgroundImage={aboutCard3}
+            backgroundImage="./images/about/aboutCard1.jpg"
             text="A well-rounded program that integrates academics, arts, and physical education, fostering all aspects of child development."
           />
           <AboutCard
             delay="200"
             color="xanthous"
             label="Innovative Learning Environments"
-            backgroundImage={aboutCard5}
+            backgroundImage="./images/about/aboutCard2.jpg"
             text="Classrooms designed to inspire creativity, equipped with interactive tools and resources to enhance learning experiences."
           />
           <AboutCard
             delay="300"
             color="xanthous"
             label="Experienced Educators"
-            backgroundImage={aboutCard4}
+            backgroundImage="./images/about/aboutCard3.jpg"
             text="A team of qualified and passionate teachers committed to providing personalized attention and support to every child."
           />
         </div>
